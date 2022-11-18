@@ -238,6 +238,16 @@
         <type>Picklist</type>
     </fields>
     <fields>
+        <fullName>Account_currency__c</fullName>
+        <externalId>false</externalId>
+        <label>Account currency</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>Active__c</fullName>
         <externalId>false</externalId>
         <label>Active</label>
