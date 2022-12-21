@@ -27,6 +27,10 @@
                 <behavior>Edit</behavior>
                 <field>Site</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>serial_number_test__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
