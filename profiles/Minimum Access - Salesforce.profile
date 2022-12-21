@@ -298,6 +298,16 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Account.testing_currency__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.testing_org2org__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>AppointmentInvitation.AppointmentTopicId</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -3848,6 +3858,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>WorkTypeExtension-Work Type Extension Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>testing_org2org__c-testing org2org Layout</layout>
     </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>
