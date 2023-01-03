@@ -31,4 +31,10 @@
         <label>Deferred</label>
         <closed>false</closed>
     </standardValue>
+    <standardValue>
+        <fullName>Test</fullName>
+        <default>false</default>
+        <label>Test</label>
+        <closed>false</closed>
+    </standardValue>
 </StandardValueSet>
