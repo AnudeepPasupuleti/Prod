@@ -8,5 +8,9 @@
         <members>Task.test_1</members>
         <name>RecordType</name>
     </types>
+    <types>
+        <members>TaskStatus</members>
+        <name>StandardValueSet</name>
+    </types>
     <version>56.0</version>
 </Package>
