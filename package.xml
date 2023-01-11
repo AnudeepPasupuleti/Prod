@@ -5,12 +5,12 @@
         <name>ApexEmailNotifications</name>
     </types>
     <types>
-        <members>testing_org2org__c</members>
-        <name>SharingRules</name>
+        <members>Campaign.testing_org2org__c</members>
+        <name>CustomField</name>
     </types>
     <types>
-        <members>TaskStatus</members>
-        <name>StandardValueSet</name>
+        <members>testing_org2org__c</members>
+        <name>SharingRules</name>
     </types>
     <version>56.0</version>
 </Package>
