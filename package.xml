@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>Admin</members>
-        <name>Profile</name>
+        <members>Account.fsd__c</members>
+        <members>Account.testing_org2org__c</members>
+        <name>CustomField</name>
     </types>
     <version>56.0</version>
 </Package>
