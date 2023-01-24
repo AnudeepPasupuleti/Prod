@@ -502,10 +502,28 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>fsd__c</fullName>
+        <externalId>false</externalId>
+        <label>fsd</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Currency</type>
+    </fields>
+    <fields>
         <fullName>serial_number_test__c</fullName>
         <externalId>false</externalId>
         <label>serial number test</label>
         <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>testing_org2org__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>testing org2org</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
     </fields>
     <listViews>
         <fullName>AllAccounts</fullName>
