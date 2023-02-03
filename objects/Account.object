@@ -535,6 +535,14 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Checkbox</type>
     </fields>
+    <fields>
+        <fullName>testing_org2orgfg__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>testing org2orgfg</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Checkbox</type>
+    </fields>
     <listViews>
         <fullName>AllAccounts</fullName>
         <filterScope>Everything</filterScope>
