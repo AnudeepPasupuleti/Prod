@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <tasks>
-        <fullName>copado__Deployment_scheduled</fullName>
-        <assignedToType>owner</assignedToType>
-        <dueDateOffset>0</dueDateOffset>
-        <notifyAssignee>false</notifyAssignee>
-        <offsetFromField>copado__Deployment__c.copado__Date__c</offsetFromField>
-        <priority>Normal</priority>
+    <alerts>
+        <fullName>copado__Deployment_Completed_email_alert</fullName>
+        <description>Deployment Completed email alert</description>
         <protected>false</protected>
-        <status>Completed</status>
-        <subject>Deployment scheduled</subject>
-    </tasks>
+        <recipients>
+            <type>owner</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>copado__Copado_Deployer/copado__NewDeploymentResultSummary</template>
+    </alerts>
 </Workflow>
