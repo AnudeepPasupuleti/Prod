@@ -233,6 +233,16 @@
                     <default>false</default>
                     <label>Manual Tests</label>
                 </value>
+                <value>
+                    <fullName>Apex Tests</fullName>
+                    <default>false</default>
+                    <label>Apex Tests</label>
+                </value>
+                <value>
+                    <fullName>PMD</fullName>
+                    <default>false</default>
+                    <label>PMD</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
