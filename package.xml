@@ -43,11 +43,13 @@
         <members>EmployeeFieldAccess</members>
         <members>EmployeeUser</members>
         <members>EncryptionKey</members>
+        <members>EngagementMessaging</members>
         <members>EnhancedNotes</members>
         <members>Entitlement</members>
         <members>Essentials</members>
         <members>Event</members>
         <members>ExperienceBundle</members>
+        <members>ExternalClientApp</members>
         <members>FieldService</members>
         <members>FileUploadAndDownloadSecurity</members>
         <members>FilesConnect</members>
@@ -56,8 +58,10 @@
         <members>Formula</members>
         <members>GoogleApps</members>
         <members>Ideas</members>
+        <members>IdentityProvider</members>
         <members>IncidentMgmt</members>
         <members>Industries</members>
+        <members>IndustriesEinsteinFeature</members>
         <members>InvLatePymntRiskCalc</members>
         <members>InvocableAction</members>
         <members>Knowledge</members>
@@ -84,6 +88,7 @@
         <members>PardotEinstein</members>
         <members>PartyDataModel</members>
         <members>PathAssistant</members>
+        <members>PaymentsIngestEnabled</members>
         <members>PaymentsManagementEnabled</members>
         <members>Picklist</members>
         <members>PlatformEncryption</members>
@@ -120,5 +125,5 @@
         <members>WorkDotCom</members>
         <name>Settings</name>
     </types>
-    <version>56.0</version>
+    <version>57.0</version>
 </Package>
