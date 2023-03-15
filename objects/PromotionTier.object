@@ -130,24 +130,17 @@
     <enableFeeds>false</enableFeeds>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
-        <fullName>WorkTypeGroupId</fullName>
+        <fullName>Name</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PromotionId</fullName>
         <trackHistory>false</trackHistory>
         <type>MasterDetail</type>
     </fields>
     <fields>
-        <fullName>WorkTypeId</fullName>
+        <fullName>Rank</fullName>
         <trackHistory>false</trackHistory>
-        <type>MasterDetail</type>
     </fields>
-    <searchLayouts>
-        <customTabListAdditionalFields>WorkTypeGroup</customTabListAdditionalFields>
-        <customTabListAdditionalFields>WorkType</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>WorkTypeGroup</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>WorkType</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>WorkTypeGroup</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>WorkType</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>WorkTypeGroup</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>WorkType</searchResultsAdditionalFields>
-    </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>
