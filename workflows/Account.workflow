@@ -7,7 +7,8 @@
         <recipients>
             <type>accountOwner</type>
         </recipients>
-        <senderType>CurrentUser</senderType>
+        <senderAddress>apasupuleti@copado.com</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
         <template>unfiled$public/SchedulerUnauthenticatedUserAppointmentTypeEmailTemplateForAmazonChime</template>
     </alerts>
 </Workflow>
