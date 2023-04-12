@@ -5,7 +5,6 @@
     <customButtons>copado__Ready_for_Promotion</customButtons>
     <customButtons>copado__Perform_Validation</customButtons>
     <customButtons>copado__Commit_Data</customButtons>
-    <customButtons>copado__Add_Metadata</customButtons>
     <customButtons>copado__Apex_Test</customButtons>
     <customButtons>copado__Run_Static_Code_Analysis</customButtons>
     <customButtons>copado__Manage_Selenium_Tests</customButtons>
@@ -402,11 +401,6 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
-            <actionName>Edit</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>0</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>copado__Commit_Files</actionName>
             <actionType>CustomButton</actionType>
             <sortOrder>1</sortOrder>
@@ -415,6 +409,11 @@
             <actionName>copado__Open_Org</actionName>
             <actionType>CustomButton</actionType>
             <sortOrder>2</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Edit</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>0</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>copado__Ready_for_Promotion</actionName>
@@ -748,7 +747,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h2o00000l6D6Z</masterLabel>
+        <masterLabel>00h5h000007w4Yn</masterLabel>
         <sizeX>3</sizeX>
         <sizeY>1</sizeY>
         <summaryLayoutItems>
