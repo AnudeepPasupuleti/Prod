@@ -57,7 +57,7 @@
                 <field>copado__Platform__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Required</behavior>
+                <behavior>Edit</behavior>
                 <field>testing__c</field>
             </layoutItems>
         </layoutColumns>
