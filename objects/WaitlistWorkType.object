@@ -130,90 +130,32 @@
     <enableFeeds>false</enableFeeds>
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
-        <fullName>ActiveFromDate</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>ActiveToDate</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>Address</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>AddressType</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>BestTimeToContactEndTime</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>BestTimeToContactStartTime</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>BestTimeToContactTimezone</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>ContactPointPhoneId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>IsDefault</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>IsPrimary</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>IsThirdPartyAddress</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>Name</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>OwnerId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>ParentId</fullName>
+        <fullName>WaitlistId</fullName>
         <trackHistory>false</trackHistory>
         <type>MasterDetail</type>
     </fields>
     <fields>
-        <fullName>PreferenceRank</fullName>
+        <fullName>WorkTypeId</fullName>
         <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
     </fields>
-    <fields>
-        <fullName>UsageType</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-    </fields>
-    <listViews>
-        <fullName>All_ContactPointAddresses</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All Contact Point Addresses</label>
-    </listViews>
     <searchLayouts>
-        <customTabListAdditionalFields>Parent</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ActiveFromDate</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ActiveToDate</customTabListAdditionalFields>
-        <customTabListAdditionalFields>IsPrimary</customTabListAdditionalFields>
-        <customTabListAdditionalFields>IsDefault</customTabListAdditionalFields>
-        <searchResultsAdditionalFields>Parent</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ActiveFromDate</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ActiveToDate</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>IsPrimary</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>IsDefault</searchResultsAdditionalFields>
+        <customTabListAdditionalFields>Waitlist</customTabListAdditionalFields>
+        <customTabListAdditionalFields>WorkType</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LastModifiedDate</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Waitlist</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>WorkType</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LastModifiedBy</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LastModifiedDate</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Waitlist</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>WorkType</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LastModifiedBy</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LastModifiedDate</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Waitlist</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>WorkType</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>
