@@ -843,6 +843,10 @@
         <label><!-- So that... --></label>
         <name>copado__userStory_reason__c</name>
     </fields>
+    <fields>
+        <label><!-- testing field --></label>
+        <name>testing__c</name>
+    </fields>
     <nameFieldLabel><!-- User Story Reference --></nameFieldLabel>
     <recordTypes>
         <label><!-- Bug --></label>
@@ -867,6 +871,10 @@
     <validationRules>
         <errorMessage><!-- The credential must belong to the environment. --></errorMessage>
         <name>copado__CredentialsMustBelongToTheEnvironment</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot enable the &quot;Ready to Promote&quot; or the &quot;Promote &amp; Deploy&quot; options because the &quot;Exclude from Pipeline&quot; option is enabled. Please disable this option first and try again. --></errorMessage>
+        <name>copado__Excluded_User_Stories_Not_Promotable</name>
     </validationRules>
     <validationRules>
         <errorMessage><!-- This User Story does not meet the required Apex coverage threshold to be promoted. --></errorMessage>

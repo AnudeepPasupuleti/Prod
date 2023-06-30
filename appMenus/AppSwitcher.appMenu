@@ -140,4 +140,12 @@
         <name>copado__Copado_Plan_Lightning</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>copado_crt_testing</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>copado_crt_testing_anudeep</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
 </AppMenu>

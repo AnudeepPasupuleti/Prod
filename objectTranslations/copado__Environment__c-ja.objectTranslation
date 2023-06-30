@@ -5,6 +5,11 @@
         <value><!-- Environment --></value>
     </caseValues>
     <fields>
+        <help><!-- Use this field as an identifier for the Environment record when referencing it in an action. --></help>
+        <label><!-- API Name --></label>
+        <name>copado__API_Name__c</name>
+    </fields>
+    <fields>
         <label><!-- Compliance Rule Group --></label>
         <name>copado__Compliance_Rule_Group__c</name>
         <relationshipLabel><!-- Environments --></relationshipLabel>

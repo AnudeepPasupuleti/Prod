@@ -37,6 +37,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>copado__Jobs</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>copado__MCWebhook</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -126,6 +130,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>copado__JobExecution__c.copado__ErrorMessage__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>copado__JobExecution__c.copado__Job_Step__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
