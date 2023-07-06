@@ -111,6 +111,7 @@
         <members>WorkTypeDefApptType</members>
         <members>WorkTypeGroupAddInfo</members>
         <name>StandardValueSet</name>
+        <members>Activity</members>
         <name>CustomObject</name>
     </types>
     <version>57.0</version>
