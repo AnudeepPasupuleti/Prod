@@ -141,17 +141,7 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>copado__TestHighlightPanel</compactLayoutAssignment>
-    <compactLayouts>
-        <fullName>copado__TestHighlightPanel</fullName>
-        <fields>Name</fields>
-        <fields>copado__ExtensionConfiguration__c</fields>
-        <fields>copado__Type__c</fields>
-        <fields>copado__User_Story__c</fields>
-        <fields>copado__Reference__c</fields>
-        <fields>LastModifiedById</fields>
-        <label>Test Highlight Panel</label>
-    </compactLayouts>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
     <description>Copado Object to spin a test scenario</description>
@@ -166,17 +156,6 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>copado__AcceptanceCriteria__c</fullName>
-        <defaultValue>&quot;{}&quot;</defaultValue>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Acceptance Criteria</label>
-        <length>32768</length>
-        <trackTrending>false</trackTrending>
-        <type>LongTextArea</type>
-        <visibleLines>3</visibleLines>
-    </fields>
-    <fields>
         <fullName>copado__Application__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <deprecated>false</deprecated>
@@ -188,6 +167,17 @@
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>copado__Category__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Test Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>copado__Configuration__c</fullName>
@@ -205,15 +195,9 @@
         <deprecated>false</deprecated>
         <externalId>false</externalId>
         <inlineHelpText>The displayed values are based on the active Extension Configuration records available in your org.</inlineHelpText>
-        <label>Tool Configuration</label>
+        <label>Tool</label>
         <lookupFilter>
             <active>true</active>
-            <booleanFilter>1 OR 2</booleanFilter>
-            <filterItems>
-                <field>copado__ExtensionConfiguration__c.copado__Active__c</field>
-                <operation>equals</operation>
-                <value>True</value>
-            </filterItems>
             <filterItems>
                 <field>copado__ExtensionConfiguration__c.copado__Status__c</field>
                 <operation>equals</operation>
@@ -242,49 +226,27 @@
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>copado__HasExtraConfiguration__c</fullName>
-        <defaultValue>false</defaultValue>
-        <deprecated>false</deprecated>
-        <description>Internally used to dynamically display the Test Definition tab, visible only if there are one or more UISection__mdt related records.</description>
-        <externalId>false</externalId>
-        <label>Has Extra Configuration</label>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
-    </fields>
-    <fields>
-        <fullName>copado__LatestJobExecution__c</fullName>
+        <fullName>copado__Integration__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <label>Latest Job Execution</label>
-        <referenceTo>copado__JobExecution__c</referenceTo>
-        <relationshipLabel>Tests</relationshipLabel>
+        <inlineHelpText>Deprecated</inlineHelpText>
+        <label>Tool - Deprecated</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>copado__ExtensionConfiguration__c.copado__Status__c</field>
+                <operation>equals</operation>
+                <value>Active</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>copado__ExtensionConfiguration__c</referenceTo>
+        <relationshipLabel>Tests - Deprecated</relationshipLabel>
         <relationshipName>Tests</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>copado__Parent_Id__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Parent Id</label>
-        <length>255</length>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>copado__Parent__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <formula>IF( NOT( ISBLANK( copado__Parent_Id__c ) ) , HYPERLINK(&quot;/&quot;+copado__Parent_Id__c, copado__Parent_Id__c, &quot;_self&quot;) , &quot;&quot;)</formula>
-        <label>Parent</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
     </fields>
     <fields>
         <fullName>copado__Priority__c</fullName>
@@ -320,29 +282,6 @@
                 </value>
             </valueSetDefinition>
         </valueSet>
-    </fields>
-    <fields>
-        <fullName>copado__Promotion__c</fullName>
-        <deleteConstraint>Restrict</deleteConstraint>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <label>Promotion</label>
-        <referenceTo>copado__Promotion__c</referenceTo>
-        <relationshipLabel>Tests</relationshipLabel>
-        <relationshipName>Tests</relationshipName>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>copado__ReadyToRun__c</fullName>
-        <defaultValue>false</defaultValue>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <inlineHelpText>By checking this field, you are indicating that the test is ready to be executed and the &apos;Run&apos; button will display.</inlineHelpText>
-        <label>Ready to Run</label>
-        <trackTrending>false</trackTrending>
-        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>copado__Reference__c</fullName>
@@ -394,24 +333,11 @@
         </valueSet>
     </fields>
     <fields>
-        <fullName>copado__Test_Tool__c</fullName>
+        <fullName>copado__Tool__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <formula>TEXT(copado__ExtensionConfiguration__r.copado__ExtensionTool__c)</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Test Tool</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>copado__Type__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <formula>copado__ExtensionConfiguration__r.copado__TestType__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Type</label>
+        <label>Tool</label>
+        <length>255</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -433,9 +359,10 @@
     <label>Test</label>
     <listViews>
         <fullName>copado__All</fullName>
-        <columns>NAME</columns>
-        <columns>copado__ExtensionConfiguration__c</columns>
         <columns>copado__Reference__c</columns>
+        <columns>NAME</columns>
+        <columns>copado__Category__c</columns>
+        <columns>copado__Tool__c</columns>
         <columns>copado__User_Story__c</columns>
         <columns>CREATEDBY_USER</columns>
         <columns>LAST_UPDATE</columns>
@@ -447,21 +374,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Tests</pluralLabel>
-    <searchLayouts>
-        <searchResultsAdditionalFields>copado__ExtensionConfiguration__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__Reference__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>copado__User_Story__c</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CREATEDBY_USER</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
-    </searchLayouts>
+    <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
-    <validationRules>
-        <fullName>copado__PreventUpdatingToolConfiguration</fullName>
-        <active>true</active>
-        <description>This rule prevents users from modifying the Tool Configuration after the test is created.</description>
-        <errorConditionFormula>AND( NOT( ISNEW() ) ,
- ISCHANGED( copado__ExtensionConfiguration__c ) )</errorConditionFormula>
-        <errorMessage>This Tool Configuration cannot be modified. Please create a new Test and select the Tool Configuration needed.</errorMessage>
-    </validationRules>
     <visibility>Public</visibility>
 </CustomObject>

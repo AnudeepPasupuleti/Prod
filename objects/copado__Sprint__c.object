@@ -170,13 +170,12 @@
         <fullName>copado__ActualVelocity__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <inlineHelpText>Calculated by adding up the points of User Stories based on their status changes to Completed. This can be changed in the &quot;Actual Velocity Statuses&quot; Custom Metadata Type. Refer to Copado Docs for more info.</inlineHelpText>
         <label>Actual Velocity</label>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
         <trackHistory>false</trackHistory>
-        <trackTrending>true</trackTrending>
+        <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -189,6 +188,7 @@
         <required>false</required>
         <scale>0</scale>
         <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -199,6 +199,7 @@
         <label>End Date</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
     <fields>
@@ -210,6 +211,7 @@
         <required>false</required>
         <scale>1</scale>
         <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -217,12 +219,12 @@
         <fullName>copado__InitialPlannedVelocity__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <inlineHelpText>Calculated when the Sprint status is changed to In Progress by adding up the points assigned to all User Stories in the Sprint. This value is only calculated once at the beginning of a Sprint.</inlineHelpText>
         <label>Initial Planned Velocity</label>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
         <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -233,6 +235,7 @@
         <label>Sprint Goal</label>
         <length>10000</length>
         <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>5</visibleLines>
     </fields>
@@ -240,13 +243,12 @@
         <fullName>copado__PlannedVelocity__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <inlineHelpText>Recalculated with every change made to the points assigned to all User Stories in the Sprint. It also gets recalculated when new User Stories are added.</inlineHelpText>
         <label>Planned Velocity</label>
         <precision>18</precision>
         <required>false</required>
         <scale>2</scale>
         <trackHistory>false</trackHistory>
-        <trackTrending>true</trackTrending>
+        <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -261,6 +263,7 @@
         <relationshipName>Sprints</relationshipName>
         <required>false</required>
         <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
     <fields>
@@ -274,6 +277,7 @@
         <relationshipName>Sprints</relationshipName>
         <required>false</required>
         <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
     <fields>
@@ -283,6 +287,7 @@
         <label>Start Date</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Date</type>
     </fields>
     <fields>
@@ -292,6 +297,7 @@
         <label>Status</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Picklist</type>
         <valueSet>
             <valueSetDefinition>
@@ -328,6 +334,7 @@
         <required>false</required>
         <scale>2</scale>
         <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -342,6 +349,7 @@
         <relationshipName>Sprints</relationshipName>
         <required>false</required>
         <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Lookup</type>
     </fields>
     <fields>
@@ -375,6 +383,7 @@
         <required>false</required>
         <scale>0</scale>
         <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
     </fields>
@@ -387,6 +396,7 @@
         <required>false</required>
         <scale>0</scale>
         <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
     </fields>

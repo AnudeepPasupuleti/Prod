@@ -672,7 +672,7 @@
                                                                             <apex:outputPanel layout="none" rendered="{!condition.fieldApiName != ''}">
                                                                                 <apex:inputField styleClass="{!IF(condition.fieldType != 'BOOLEAN', 'slds-input', 'slds-checkbox')}" rendered="{!!condition.isReadOnly}"
                                                                                                  type="{!IF(condition.fieldType == 'INTEGER' || condition.fieldType == 'DOUBLE' || condition.fieldType == 'LONG', 'number', '')}"
-                                                                                                 value="{!condition.userStory[condition.fieldApiName]}" required="false"
+                                                                                                 value="{!selectedFilter.userStoryFilter[condition.fieldApiName]}" required="false"
                                                                                                  showDatePicker="{!IF(condition.fieldType == 'DATE' || condition.fieldType == 'DATETIME', 'true', 'false')}"
                                                                                                  onKeyUp="if({!condition.fieldType == 'INTEGER' || condition.fieldType == 'DOUBLE' || condition.fieldType == 'LONG'}) preventNonNumericInput(this)"
                                                                                                  html-onpaste="if({!condition.fieldType == 'INTEGER' || condition.fieldType == 'DOUBLE' || condition.fieldType == 'LONG'}) preventNonNumericInput(this)" />
@@ -1177,7 +1177,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </apex:outputPanel>
-                                                                        <apex:outputPanel layout="none" rendered="{!AND(pipelineMode == DIAGRAM, envWrapper.currentStep.Connection_Behavior_Override__c != null, OR(currentPipeline.copado__Platform__c == 'Salesforce',currentPipeline.copado__Platform__c == null))}" style="cursor: pointer;">
+                                                                        <apex:outputPanel layout="none" rendered="{!AND(pipelineMode == DIAGRAM, envWrapper.currentStep.Connection_Behavior_Override__c != null)}" style="cursor: pointer;">
                                                                             <div class="minipagelayout" style="opacity: 0;position:fixed;">
                                                                                 <apex:outputField value="{!envWrapper.currentStep.Connection_Behavior_Override__c}" />
                                                                             </div>
@@ -1300,11 +1300,11 @@
                                                                     <div class="data">
                                                                         <span id="{!envWrapper.currentEnvironment.Id}_title" class="org" target="_blank" title="{!envWrapper.currentEnvironment.Name}">{!envWrapper.currentEnvironment.Name}</span><br />
                                                                         <apex:outputPanel rendered="{!envByGroup != 'Final'}">
-                                                                            <div class="branch" title="{!envWrapper.currentStep.Branch__c}">{!$Label.copado__BRANCH}
+                                                                            <div class="branch" title="{!envWrapper.currentStep.Branch__c}">Branch
                                                                                 <span>{!envWrapper.currentStep.Branch__c}</span></div>
                                                                         </apex:outputPanel>
                                                                         <apex:outputPanel rendered="{!envByGroup == 'Final'}">
-                                                                            <div class="branch" title="{!envWrapper.currentStep.Destination_Branch__c}">{!$Label.copado__BRANCH}
+                                                                            <div class="branch" title="{!envWrapper.currentStep.Destination_Branch__c}">Branch
                                                                                 <span>{!envWrapper.currentStep.Destination_Branch__c}</span></div>
                                                                         </apex:outputPanel>
                                                                     </div>
@@ -1312,7 +1312,7 @@
                                                                 <div>
                                                                     <apex:outputPanel rendered="{!pipelineMode == DIAGRAM}" layout="none">
                                                                         <hr style="width: 90%;margin: 0 auto;" />
-                                                                        <apex:outputPanel layout="none" rendered="{!AND(envWrapper.currentEnvironment.Connection_Behavior__c != null, envWrapper.isDestinationEnv, OR(currentPipeline.copado__Platform__c == 'Salesforce',currentPipeline.copado__Platform__c == null))}">
+                                                                        <apex:outputPanel layout="none" rendered="{!AND(envWrapper.currentEnvironment.Connection_Behavior__c != null, envWrapper.isDestinationEnv)}">
                                                                             <div class="env-connection-info">
                                                                                 <div class="env-connection-behaviour-override">
                                                                                     <div class="minipagelayout" style="opacity: 0;position:fixed;">
@@ -1358,7 +1358,7 @@
                                                                                 </div>
                                                                             </div>
                                                                         </apex:outputPanel>
-                                                                        <apex:outputPanel layout="none" rendered="{!AND(envWrapper.currentEnvironment.Connection_Behavior__c == null, envWrapper.currentEnvironment.Id != null, envWrapper.isDestinationEnv, OR(currentPipeline.copado__Platform__c == 'Salesforce',currentPipeline.copado__Platform__c == null))}">
+                                                                        <apex:outputPanel layout="none" rendered="{!AND(envWrapper.currentEnvironment.Connection_Behavior__c == null, envWrapper.currentEnvironment.Id != null, envWrapper.isDestinationEnv)}">
                                                                             <div class="env-connection-info" onclick="lockScreen();createNewConnectionBehaviorAndBind('','{!envWrapper.currentEnvironment.Id}', '{!JSINHTMLENCODE(envWrapper.currentEnvironment.Name)}','');">
                                                                                 <div title="Click here to create a connection behavior" class="env-connection-behaviour-override" style="filter: grayscale(100%);opacity:60%;">
                                                                                     <div class="icon">
@@ -1975,7 +1975,7 @@
                 <apex:outputPanel layout="block" id="operationModal" styleClass="slds-modal__container" style="width: 100% !important;">
                     <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1" style="min-height: 85%; height: 100%; overflow-x:scroll;">
                         <apex:outputPanel id="copadoErrorPanelForDialog" layout="none">
-                            <apex:outputPanel layout="none" styleClass="error-panel" rendered="{!OR(currentPipeline.copado__Platform__c == 'Salesforce',currentPipeline.copado__Platform__c == null)}">
+                            <apex:outputPanel layout="none" styleClass="error-panel">
                                 <div id="divToast" class="slds-notify_container slds-is-relative">
                                     <apex:repeat value="{!pageMessagesMap}" var="severity">
                                         <div class="slds-notify slds-notify_toast slds-theme_{!severity}" role="status">
@@ -2066,7 +2066,7 @@
                             </apex:outputPanel>
                         </apex:outputPanel>
                         <apex:outputPanel styleClass="slds-modal__content slds-p-around_medium" id="mcPromotionMessages">
-                            <apex:outputPanel layout="none" styleClass="error-panel" rendered="{!AND(currentPipeline.copado__Platform__c != 'Salesforce',currentPipeline.copado__Platform__c != null)}">
+                            <apex:outputPanel layout="none" styleClass="error-panel">
                                 <div id="divToast" class="slds-notify_container slds-is-relative">
                                     <apex:repeat value="{!pageMessagesMap}" var="severity">
                                         <div class="slds-notify slds-notify_toast slds-theme_{!severity}" role="status">

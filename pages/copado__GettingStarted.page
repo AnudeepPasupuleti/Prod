@@ -293,8 +293,7 @@
                                                                             <div class="slds-truncate">{!orgCredentialMap[ocl].Platform__c}</div>
                                                                         </td>
                                                                         <td>
-                                                                            <apex:commandLink styleClass="slds-button slds-button--neutral" value="{!$Label.copado__Set_Oauth_Authentication}" action="{!doOauth}"
-                                                                                target="_blank" rendered="{!OR(orgCredentialMap[ocl].Platform__c == null,orgCredentialMap[ocl].Platform__c == 'Salesforce')}">
+                                                                            <apex:commandLink styleClass="slds-button slds-button--neutral" value="{!$Label.copado__Set_Oauth_Authentication}" action="{!doOauth}" target="_blank" rendered="{!OR(orgCredentialMap[ocl].Platform__c == null,orgCredentialMap[ocl].Platform__c == 'Salesforce')}">
                                                                                 <apex:param name="setOauth" value="{!orgCredentialMap[ocl].Id}" />
                                                                             </apex:commandLink>
                                                                         </td>
@@ -327,8 +326,7 @@
                                                                             <div class="slds-truncate">{!orgCredentialMap[ocl].Platform__c}</div>
                                                                         </td>
                                                                         <td>
-                                                                            <apex:outputLink styleClass="slds-button slds-button--neutral" target="_blank" value="{!URLFOR($Page.copado__ScratchOrgOpen,null,[id=orgCredentialMap[ocl].Id])}"
-                                                                                rendered="{!OR(orgCredentialMap[ocl].Platform__c == null,orgCredentialMap[ocl].Platform__c == 'Salesforce')}">
+                                                                            <apex:outputLink styleClass="slds-button slds-button--neutral" target="_blank" value="{!URLFOR($Page.copado__ScratchOrgOpen,null,[id=orgCredentialMap[ocl].Id])}" rendered="{!OR(orgCredentialMap[ocl].Platform__c == null,orgCredentialMap[ocl].Platform__c == 'Salesforce')}">
                                                                                 {!$Label.copado__Open_Org}
                                                                             </apex:outputLink>
                                                                             <apex:outputLink styleClass="slds-button slds-button--neutral" target="_blank" value="{!URLFOR($Page.copado__DXOperation,null,[id=orgCredentialMap[ocl].Id])}"

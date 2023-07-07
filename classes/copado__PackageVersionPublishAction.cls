@@ -5,17 +5,12 @@ This read-only file shows the class's global constructors,
 methods, variables, and properties.
 To enable code to compile, all methods return null.
 */
-global class PackageVersionPublishAction implements copado.JobExecutionCallback {
-    global void execute(copado__JobExecution__c job, String status) {
-
-    }
+global class PackageVersionPublishAction implements copado.Actionable {
     @InvocableMethod(label='Package Version Publish Action')
     global static List<copado.PackageVersionPublishAction.Response> publish(List<copado.PackageVersionPublishAction.Request> requests) {
         return null;
     }
 global class Request {
-    @InvocableVariable(label='Action Callback' description='Apex Callback Class that implements JobExecutionCallback' required=false)
-    global String actionCallback;
     @InvocableVariable(label='Package Version Id' required=true)
     global Id packageVersionId;
     global Request(Id packageVersionId) {

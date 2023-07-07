@@ -80,8 +80,8 @@
                 <div id="metadataGrid2">
                     <div class='mg2_tabs'>
                         <ul style="margin-left: 20px;">
-                            <li>{!$Label.All_Metadata}</li>
-                            <li>{!$Label.SelectedMetadata}</li>
+                            <li>All Metadata</li>
+                            <li>Selected Metadata</li>
                             <!--<li>Retrieve Dependencies</li>-->
                         </ul>
                         <div>

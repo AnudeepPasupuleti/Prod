@@ -246,7 +246,7 @@
                         />
                         <div class="row">
                             <apex:panelGrid id="theGrid" columns="2" style="width:100%;" columnClasses="co-info-panel">
-                                <apex:pageblock title="{!$Label.copado__INFORMATION}" id="pbInformation">
+                                <apex:pageblock title="Information" id="pbInformation">
                                     <apex:pageBlockButtons id="pbbInfo" location="top">
                                         <apex:commandButton id="btnDeploymentSave" value="{!$Label.site.save}" onclick="copadoApp.dirty=false;" action="{!saveDeployment}"
                                             rerender="pbsDestinations,otherInfoSection,msg,pJSConfig,headerFields,lexHeaderContainer,sectionHeaderContainer"
@@ -372,7 +372,7 @@
                                         </apex:repeat>
                                     </apex:pageBlockSection>
                                 </apex:pageblock>
-                                <apex:pageblock title="{!$Label.copado__STATUS}" id="pbStatus">
+                                <apex:pageblock title="Status" id="pbStatus">
                                     <style>
                                         #thePage\:theForm\:pbStatus>div.pbHeader>table>tbody>tr>td.pbTitle {
                                             width: 10% !important;
@@ -384,7 +384,7 @@
                                         />
                                         <input id="btnViewStatus" type="button" class="btn" style="display:none" value="{!$Label.VIEW_DEPLOYMENT_STATUS}" onclick="openIframeBox()"
                                         />
-                                        <apex:commandButton id="btnShowHookUrl" value="{!$Label.copado__Show_Hook_URL}" onclick="showWebhook(); return false;" />
+                                        <apex:commandButton id="btnShowHookUrl" value="Show Hook URL" onclick="showWebhook(); return false;" />
                                     </apex:pageBlockButtons>
                                     <apex:pageBlockSection id="pbsPbStatus" columns="1">
                                         <apex:outputField id="ofStatus" value="{!deployment.copado__Status__c}">
@@ -490,10 +490,10 @@
                                 <div id="tab-container" class="tab-container">
                                     <ul class='etabs'>
                                         <li class='tab'>
-                                            <a href="#stepDetail" id="tab-stepDetail">{!$Label.Details}</a>
+                                            <a href="#stepDetail" id="tab-stepDetail">Details</a>
                                         </li>
                                         <li class='tab'>
-                                            <a href="#stepResult" id="tab-stepResult">{!$Label.Result}</a>
+                                            <a href="#stepResult" id="tab-stepResult">Result</a>
                                         </li>
                                     </ul>
                                     <div class="panel-container">

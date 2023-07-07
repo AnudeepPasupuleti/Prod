@@ -584,331 +584,6 @@
         <label>Bundle</label>
     </fieldSets>
     <fieldSets>
-        <fullName>copado__Bundle_Sync_Fields</fullName>
-        <availableFields>
-            <field>copado__Apex_Code_Coverage__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Apex_Tests_Passed__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Backburner_Rank__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Backlog_Rank__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Base_Branch__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Business_Analyst__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Cancellation_Reason__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Classes_Without_Coverage__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Close_Date__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Compliance_Criteria__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Compliance_Status__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Compliance__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Data_Privacy__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Developer__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Documentation_Complete__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Environment__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Epic__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Exclude_From_CBM__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Failing_Methods__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Functional_Specifications__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Git_Merge_Status__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Has_Apex_Code__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>Id</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Is_Bundle__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Last_Compliance_Scan_Date__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Last_Promotion_Date__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Last_Validation_Deployment__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Last_Validation_Promotion__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Latest_Commit_Date__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Legal__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Manual_Step_Required__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Manual_Tests_Passed__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Metadata_Types_in_Selection__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Minimum_Apex_Code_Coverage__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Order__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Org_Credential__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>OwnerId</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Priority__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Progress__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Project__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Promote_Change__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Promote_and_Deploy__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Promote_as_Single_Step__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Promotion_Test_Level__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Pull_Requests_Approved__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>RecordTypeId</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Release__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Sprint__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Status__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Stop_Indexing_Metadata__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Story_Points_Other__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Story_Points_SFDC__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>SystemModstamp</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Team__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Technical_Specifications__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Test_Script_Owner__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Theme__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Triggers_Without_Coverage__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__US_Feature__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__User_Story_Title__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Validate_Only__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__userStory_Role__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__userStory_need__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__userStory_reason__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <description>Field to be synced in User Story Bundles and child stories</description>
-        <label>Bundle Sync Fields</label>
-    </fieldSets>
-    <fieldSets>
         <fullName>copado__CBM_Fields</fullName>
         <availableFields>
             <field>copado__Acceptance_Criteria_Status__c</field>
@@ -6234,20 +5909,6 @@
         <type>TextArea</type>
     </fields>
     <fields>
-        <fullName>copado__Actual_Points_Other__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <inlineHelpText>Use this field to split your User Story&apos;s actual effort on implementation, reviews, testing, and documentation among different scopes. Example: Dev and QA, Frontend and Backend. You can label this field to match your scope.</inlineHelpText>
-        <label>Actual Points Other</label>
-        <precision>3</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>copado__Apex_Code_Coverage__c</fullName>
         <deprecated>false</deprecated>
         <description>Coverage of the Apex Classes added or committed within the User Story.</description>
@@ -6518,7 +6179,7 @@
         <description>If checked, this user story will not be included in the count of user stories ahead and behind.</description>
         <externalId>false</externalId>
         <inlineHelpText>If checked, this user story will not be included in the count of user stories ahead and behind.</inlineHelpText>
-        <label>Exclude from Pipelines</label>
+        <label>Exclude From CBM</label>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -7211,20 +6872,6 @@ IMAGE(&apos;/img/msg_icons/warning16.png&apos;,&apos;OutDated&apos;)+&quot; &quo
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>copado__Planned_Points_Other__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <inlineHelpText>Use this field to split your User Story effort estimation among different scopes. Example: Dev and QA, Frontend and Backend. You can label this field to match your scope.</inlineHelpText>
-        <label>Planned Points Other</label>
-        <precision>3</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>copado__Platform__c</fullName>
         <deprecated>false</deprecated>
         <description>This field auto-populates and displays the pipeline platform</description>
@@ -7263,8 +6910,7 @@ IMAGE(&apos;/img/msg_icons/warning16.png&apos;,&apos;OutDated&apos;)+&quot; &quo
         <fullName>copado__Progress_Status__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <formula>IMAGE(&quot;/img/samples/color_green.gif&quot;, &quot;&quot;, 1, 0) &amp;
-IMAGE(&quot;/img/samples/color_green.gif&quot;, &quot;Completed&quot;, 15, (copado__Progress__c*100) * 2) &amp;
+        <formula>IMAGE(&quot;/img/samples/color_green.gif&quot;, &quot;Completed&quot;, 15, (copado__Progress__c*100) * 2) &amp;
 IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
 200 - ((copado__Progress__c*100)* 2))</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
@@ -7510,7 +7156,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <description>If checked, the User Story will not be indexed for Copado&apos;s Overlap Awareness.</description>
         <externalId>false</externalId>
         <inlineHelpText>If checked, the User Story will not be indexed for Copado&apos;s Overlap Awareness.</inlineHelpText>
-        <label>Exclude from Overlap Awareness</label>
+        <label>Stop Indexing Metadata</label>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
@@ -7519,7 +7165,6 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <fullName>copado__Story_Points_Other__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <inlineHelpText>The estimated effort your team plans to allocate on implementing, reviewing, testing, and documenting the User Story.</inlineHelpText>
         <label>Planned Points</label>
         <precision>3</precision>
         <required>false</required>
@@ -7533,7 +7178,6 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <fullName>copado__Story_Points_SFDC__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <inlineHelpText>The actual effort the team put into the implementation, reviews, testing, and documentation of the User Story.</inlineHelpText>
         <label>Actual Points</label>
         <precision>3</precision>
         <required>false</required>
@@ -7601,29 +7245,12 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>copado__Total_Actual_Points__c</fullName>
-        <deprecated>false</deprecated>
-        <externalId>false</externalId>
-        <formula>copado__Story_Points_SFDC__c + copado__Actual_Points_Other__c</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <inlineHelpText>Sum of Actual Points and Actual Points Other. Use this field along with Actual Points Other if you need to split your User Story effort among different scopes.</inlineHelpText>
-        <label>Total Actual Points</label>
-        <precision>18</precision>
-        <required>false</required>
-        <scale>0</scale>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>Number</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>copado__Total_Story_Points__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <formula>copado__Story_Points_Other__c + copado__Planned_Points_Other__c</formula>
+        <formula>copado__Story_Points_SFDC__c+copado__Story_Points_Other__c</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <inlineHelpText>Sum of Planned Points and Planned Points Other. Use this field along with Planned Points Other if you need to split your User Story effort estimation among different scopes.</inlineHelpText>
-        <label>Total Planned Points</label>
+        <label>Total Story Points</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -7705,21 +7332,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
 				copado__Project__r.copado__Deployment_Flow__r.copado__Git_Repository__r.copado__Branch_Base_URL__c + &apos;feature/&apos; + Name
 			)
 		),
-		IF(
-		AND(
-			NOT(ISNULL(copado__Release__r.copado__Project__r.copado__Deployment_Flow__r.copado__Git_Repository__r.copado__Branch_Base_URL__c )), copado__Release__r.copado__Project__r.copado__Deployment_Flow__r.copado__Git_Repository__r.copado__Branch_Base_URL__c != &apos;&apos;
-		),
-		IF(
-			AND(NOT(ISPICKVAL(copado__Release__r.copado__Project__r.copado__Deployment_Flow__r.copado__Git_Repository__r.copado__Git_Provider__c,&apos;&apos;)),NOT(ISPICKVAL(copado__Release__r.copado__Project__r.copado__Deployment_Flow__r.copado__Git_Repository__r.copado__Git_Provider__c, &apos;Others&apos;))),
-			copado__Release__r.copado__Project__r.copado__Deployment_Flow__r.copado__Git_Repository__r.copado__Branch_Base_URL__c + &apos;feature/&apos; + Name ,
-			IF(
-				CONTAINS(copado__Release__r.copado__Project__r.copado__Deployment_Flow__r.copado__Git_Repository__r.copado__Branch_Base_URL__c,&apos;[BRANCH_NAME]&apos;),
-				SUBSTITUTE(copado__Release__r.copado__Project__r.copado__Deployment_Flow__r.copado__Git_Repository__r.copado__Branch_Base_URL__c,&apos;[BRANCH_NAME]&apos;,&apos;feature/&apos; + Name),
-				copado__Release__r.copado__Project__r.copado__Deployment_Flow__r.copado__Git_Repository__r.copado__Branch_Base_URL__c + &apos;feature/&apos; + Name
-			)
-		),
 		&apos;&apos;
-	)
 	),
 	&apos;feature/&apos; + Name
 )</formula>
@@ -9604,6 +9217,7 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <customTabListAdditionalFields>copado__Epic__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>copado__Theme__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>copado__Project__c</customTabListAdditionalFields>
+        <listViewButtons>copado__Assign_to_Release</listViewButtons>
         <listViewButtons>copado__Import_to_User_Story</listViewButtons>
         <listViewButtons>copado__Create_Bundle</listViewButtons>
         <lookupDialogsAdditionalFields>copado__User_Story_Title__c</lookupDialogsAdditionalFields>
@@ -9630,25 +9244,6 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
 )</errorConditionFormula>
         <errorDisplayField>copado__Cancellation_Reason__c</errorDisplayField>
         <errorMessage>A cancellation reason must be given.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>copado__CredentialsMustBelongToTheEnvironment</fullName>
-        <active>true</active>
-        <errorConditionFormula>NOT ( ISBLANK(copado__Environment__c) ) &amp;&amp;
-NOT ( ISBLANK(copado__Org_Credential__c) ) &amp;&amp;
-copado__Environment__c != copado__Org_Credential__r.copado__Environment__c</errorConditionFormula>
-        <errorMessage>The credential must belong to the environment.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>copado__Excluded_User_Stories_Not_Promotable</fullName>
-        <active>true</active>
-        <description>If &apos;Excluded from CBM&apos; is enable, the user story can not be mark as &quot;Ready To Promote&quot; or &quot;Promote &amp; Deploy&quot;</description>
-        <errorConditionFormula>IF(
-  AND(NOT(ISBLANK(copado__Platform__c)), copado__Platform__c != &apos;Salesforce&apos;), 
-  (IF(AND(copado__Exclude_From_CBM__c, OR(copado__Promote_Change__c, copado__Promote_and_Deploy__c)), TRUE, FALSE)),
-  FALSE
-)</errorConditionFormula>
-        <errorMessage>You cannot enable the &quot;Ready to Promote&quot; or the &quot;Promote &amp; Deploy&quot; options because the &quot;Exclude from Pipeline&quot; option is enabled. Please disable this option first and try again.</errorMessage>
     </validationRules>
     <validationRules>
         <fullName>copado__Promote_User_Story_Apex_validation</fullName>
@@ -9680,13 +9275,6 @@ copado__Environment__c != copado__Org_Credential__r.copado__Environment__c</erro
         <errorConditionFormula>TEXT(copado__Org_Credential__r.copado__Org_Type__c) == &apos;Scratch Org - Test only&apos;</errorConditionFormula>
         <errorDisplayField>copado__Org_Credential__c</errorDisplayField>
         <errorMessage>Test scratch orgs cannot be used for developments</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>copado__User_Story_Progress_Range_Validation</fullName>
-        <active>true</active>
-        <description>If User Story has Progress%, it should be in a valid range of 0 to 100.</description>
-        <errorConditionFormula>NOT(ISNULL( copado__Progress__c )) &amp;&amp; (copado__Progress__c &lt; 0 || copado__Progress__c &gt; 1)</errorConditionFormula>
-        <errorMessage>Enter a value between 0 to 100 to specify the Progress in percentage.</errorMessage>
     </validationRules>
     <visibility>Public</visibility>
     <webLinks>

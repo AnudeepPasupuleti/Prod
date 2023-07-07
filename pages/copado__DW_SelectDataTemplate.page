@@ -33,7 +33,7 @@
                 <div class="slds-col slds-size_6-of-12">
 
                     <h1>{!deploymentInterface.StepGeneralHeader}</h1>
-                    <p class="subtitle">{!$Label.SelectDataTemplate}</p>
+                    <p class="subtitle">{!$Label.Select_Data_Template}</p>
 
                     <div class="deployment-flow-step">
                         <div class="wrapper">

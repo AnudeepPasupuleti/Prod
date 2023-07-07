@@ -75,11 +75,6 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
-            <actionName>copado__Deployment__c.copado__Execute_Automation_Template</actionName>
-            <actionType>QuickAction</actionType>
-            <sortOrder>0</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>copado__Deployment__c.copado__Export_Template</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>1</sortOrder>
@@ -88,6 +83,11 @@
             <actionName>copado__Deployment__c.copado__Clone_Template</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>2</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>copado__Deployment__c.copado__Execute_Automation_Template</actionName>
+            <actionType>QuickAction</actionType>
+            <sortOrder>0</sortOrder>
         </platformActionListItems>
         <platformActionListItems>
             <actionName>Edit</actionName>

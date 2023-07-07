@@ -353,7 +353,7 @@
                                                 <apex:actionFunction name="vlocityToggle" action="{!vlocityFeatureOperations}" oncomplete="toggleVlocityCheckbox('{!AND(VlocityFeature != null,VlocityFeature.copado__Enabled__c)}');"
                                                     reRender="pbFeatures" />
                                             </apex:outputPanel>
-                                            <apex:commandButton action="{!refreshFeatures}" value="{!$Label.copado__Refresh_Feature}" />
+                                            <apex:commandButton action="{!refreshFeatures}" value="Refresh features" />
                                         </div>
                                     </apex:pageBlockButtons>
 
@@ -386,7 +386,7 @@
                                         </apex:pageBlockSectionItem>
                                     </apex:pageBlockSection>
                                 </apex:pageBlock>
-                                <apex:actionFunction name="doPrivateSettingUdate" action="{!updatePrivateSettings}" reRender="messagesContainer, pbAPIKey" />
+                                <apex:actionFunction name="doPrivateSettingUdate" action="{!updatePrivateSettings}" reRender="pbAPIKey" />
                             </apex:tab>
                             <apex:tab label="{!$Label.copado__TRANSACTIONS}" name="transactions" id="tabThree">
                                 <apex:pageBlock id="pbTrans" title="{!$Label.copado__TRANSACTIONS}" helpUrl="https://docs.copado.com/copado-licenses/credit-usage"

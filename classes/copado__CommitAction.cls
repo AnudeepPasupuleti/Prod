@@ -17,25 +17,17 @@ global class CommitAction implements copado.JobExecutionCallback {
 
     }
 global class Change {
-    @InvocableVariable(label='a' description='action: add, delete, ret-only, full pps, ...' required=false)
     global String a;
-    @InvocableVariable(label='c' description='category: copadodx, vlocity, cpq, ...' required=false)
     global String c;
-    @InvocableVariable(label='j' description='json additional information' required=false)
     global String j;
-    @InvocableVariable(label='m' description='module directory e.g. force-app/main/default' required=false)
     global String m;
-    @InvocableVariable(label='n' description='name' required=false)
     global String n;
-    @InvocableVariable(label='t' description='type' required=false)
     global String t;
     global Change() {
 
     }
 }
 global class Request {
-    @InvocableVariable(label='Action Callback' description='Apex Callback Class that implements JobExecutionCallback' required=false)
-    global String actionCallback;
     @InvocableVariable(label='Base branch' description='Base branch for the commit. If not provided, a default value is calculated based on User Story, Release, or Pipeline' required=false)
     global String baseBranch;
     @InvocableVariable(label='Changes' description='List of changes to commit' required=false)
@@ -61,8 +53,5 @@ global class Response {
     global copado__JobExecution__c jobExecution;
     @InvocableVariable(label='User Story Commit' description='User Story Commit record created as part of the commit process' required=false)
     global copado__User_Story_Commit__c userStorycommit;
-    global Response() {
-
-    }
 }
 }

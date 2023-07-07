@@ -280,11 +280,11 @@ var operationTypeAttachmentName;
                     const mdtAtt = dw.u.getDecodedAttach(orgId, 'MetaData');
                     const allMdt = JSON.parse(mdtAtt.Body);
                     for (const member of sourceMembers) {
-                        const isEqual = (mdt) => mdt.t === member.MemberType && (mdt.n === encodeURIComponent(member.MemberName).replace(/%20/g," "));
+                        const isEqual = (mdt) => mdt.t === member.MemberType && (mdt.n === encodeURIComponent(member.MemberName));
                         const index = allMdt.findIndex(isEqual);                       
                         const mdtWrapper = {
                             t: member.MemberType,
-                            n: encodeURIComponent(member.MemberName).replace(/%20/g," "),
+                            n: encodeURIComponent(member.MemberName),
                             b: dw.u.getHtmlDecodedString(member.LastModifiedBy.Name),
                             d: member.LastModifiedDate.substr(0, member.LastModifiedDate.indexOf('T')),
                             cb: dw.u.getHtmlDecodedString(member.CreatedBy.Name),

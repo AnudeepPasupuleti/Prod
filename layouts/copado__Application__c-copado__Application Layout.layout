@@ -90,11 +90,6 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
-            <actionName>Edit</actionName>
-            <actionType>StandardButton</actionType>
-            <sortOrder>0</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
             <actionName>Clone</actionName>
             <actionType>StandardButton</actionType>
             <sortOrder>1</sortOrder>
@@ -129,16 +124,12 @@
             <actionType>StandardButton</actionType>
             <sortOrder>7</sortOrder>
         </platformActionListItems>
+        <platformActionListItems>
+            <actionName>Edit</actionName>
+            <actionType>StandardButton</actionType>
+            <sortOrder>0</sortOrder>
+        </platformActionListItems>
     </platformActionList>
-    <relatedLists>
-        <fields>NAME</fields>
-        <fields>copado__Feature__c</fields>
-        <fields>copado__User_Story__c</fields>
-        <fields>copado__Type__c</fields>
-        <fields>copado__ExtensionConfiguration__c</fields>
-        <fields>UPDATEDBY_USER</fields>
-        <relatedList>copado__Test__c.copado__Application__c</relatedList>
-    </relatedLists>
     <relatedLists>
         <fields>NAME</fields>
         <relatedList>copado__Application__c.copado__Parent_Application__c</relatedList>
@@ -168,7 +159,7 @@
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
     <summaryLayout>
-        <masterLabel>00h0900000ANK2x</masterLabel>
+        <masterLabel>00h09000001AoG6</masterLabel>
         <sizeX>4</sizeX>
         <sizeY>0</sizeY>
         <summaryLayoutStyle>Default</summaryLayoutStyle>

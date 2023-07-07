@@ -144,7 +144,6 @@
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
-    <description>A function is a script that contains a series of commands and can be executed from Copado.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
@@ -159,9 +158,9 @@
         <fullName>copado__API_Name__c</fullName>
         <caseSensitive>false</caseSensitive>
         <deprecated>false</deprecated>
-        <description>Provide a unique API name.</description>
+        <description>Unique name that identifies this function. The function result records will contain this API Name in the job type field for filtering these results in reports and dashboards.</description>
         <externalId>true</externalId>
-        <inlineHelpText>Provide a unique API name.</inlineHelpText>
+        <inlineHelpText>Unique name that identifies this function. The function result records will contain this API Name in the job type field for filtering these results in reports and dashboards.</inlineHelpText>
         <label>API Name</label>
         <length>255</length>
         <required>true</required>
@@ -172,9 +171,11 @@
     <fields>
         <fullName>copado__ApexClass__c</fullName>
         <deprecated>false</deprecated>
-        <description>The name of the Apex class which is executed after the function has run.</description>
+        <description>Handler format: ClassName
+The class must implement the MCCallBack interface.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Name of the Apex Class. The class must implement the MCCallBack interface.</inlineHelpText>
+        <inlineHelpText>Handler format: ClassName
+The class must implement the MCCallBack interface.</inlineHelpText>
         <label>ApexClass</label>
         <length>255</length>
         <required>false</required>
@@ -185,9 +186,9 @@
     <fields>
         <fullName>copado__Callback_Type__c</fullName>
         <deprecated>false</deprecated>
-        <description>Type of Callback selected for the function.</description>
+        <description>Trigger a Flow or Apex class each time a function execution completes. This trigger happens when the function result status changes to Success or Failed.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Type of Callback selected for the function.</inlineHelpText>
+        <inlineHelpText>Trigger a Flow or Apex class each time a function execution completes. This trigger happens when the function result status changes to Success or Failed.</inlineHelpText>
         <label>Callback Type</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -212,9 +213,7 @@
     <fields>
         <fullName>copado__Description__c</fullName>
         <deprecated>false</deprecated>
-        <description>Description of the function.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Description of the function.</inlineHelpText>
         <label>Description</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -235,11 +234,10 @@
     </fields>
     <fields>
         <fullName>copado__Image_Name__c</fullName>
-        <defaultValue>&quot;copado-function-core:v1&quot;</defaultValue>
         <deprecated>false</deprecated>
-        <description>Name of the Image required to run the function.</description>
+        <description>The docker image name provided by Copado. You will find available image paths in the Copado documentation. An image name is made up of slash-separated name components, prefixed by a registry hostname.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Name of the docker image provided by Copado. Check our documentation site to find all available images.</inlineHelpText>
+        <inlineHelpText>The docker image name provided by Copado. You will find available image paths in the Copado documentation. An image name is made up of slash-separated name components, prefixed by a registry hostname.</inlineHelpText>
         <label>Image Name</label>
         <length>255</length>
         <required>false</required>
@@ -250,9 +248,7 @@
     <fields>
         <fullName>copado__Options__c</fullName>
         <deprecated>false</deprecated>
-        <description>User can define few options like maxVolume and volumeTTL which can be used to run standalone function with these configurations</description>
         <externalId>false</externalId>
-        <inlineHelpText>Define the maxVolume and volumeTTL to be used to run a standalone function with these configurations.</inlineHelpText>
         <label>Options</label>
         <length>131072</length>
         <trackTrending>false</trackTrending>
@@ -262,7 +258,6 @@
     <fields>
         <fullName>copado__Parameters__c</fullName>
         <deprecated>false</deprecated>
-        <description>A parameter is a piece of information taken from outside the function that the function needs to be executed.</description>
         <externalId>false</externalId>
         <inlineHelpText>This is used to validate if all required parameters are set before calling the execution.</inlineHelpText>
         <label>Parameters</label>
@@ -274,9 +269,7 @@
     <fields>
         <fullName>copado__Script__c</fullName>
         <deprecated>false</deprecated>
-        <description>Provide the script with the commands you would like the function to execute.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Provide the script with the commands you would like the function to execute.</inlineHelpText>
         <label>Script</label>
         <length>131072</length>
         <trackTrending>false</trackTrending>
@@ -286,9 +279,9 @@
     <fields>
         <fullName>copado__Timeout__c</fullName>
         <deprecated>false</deprecated>
-        <description>The number of minutes after which the function will automatically finish if it doesn&apos;t finish before.</description>
+        <description>The number of minutes after which the function will automatically end if there is no response from the function backend execution.</description>
         <externalId>false</externalId>
-        <inlineHelpText>The number of minutes after which the function will finish automatically and fail if it doesn&apos;t finish before the given timeout.</inlineHelpText>
+        <inlineHelpText>The number of minutes after which the function will automatically end if there is no response from the function backend execution.</inlineHelpText>
         <label>Timeout</label>
         <precision>18</precision>
         <required>false</required>
@@ -301,9 +294,7 @@
         <fullName>copado__Type__c</fullName>
         <defaultValue>&quot;Custom&quot;</defaultValue>
         <deprecated>false</deprecated>
-        <description>The type of Copado function such as Custom or Standard.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Type of Copado function.</inlineHelpText>
         <label>Type</label>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -328,9 +319,7 @@
     <fields>
         <fullName>copado__Version__c</fullName>
         <deprecated>false</deprecated>
-        <description>The version of the function being executed.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Version of the function.</inlineHelpText>
         <label>Version</label>
         <length>255</length>
         <required>false</required>
@@ -341,9 +330,7 @@
     <fields>
         <fullName>copado__Worker_Size__c</fullName>
         <deprecated>false</deprecated>
-        <description>Picklist field that defines the size of the worker. The available options are S, M, L, and XL.</description>
         <externalId>false</externalId>
-        <inlineHelpText>Picklist field that defines the size of the worker. The available options are S, M, L, and XL.</inlineHelpText>
         <label>Worker Size</label>
         <required>true</required>
         <trackTrending>false</trackTrending>
@@ -403,6 +390,8 @@
         <customTabListAdditionalFields>copado__Callback_Type__c</customTabListAdditionalFields>
         <customTabListAdditionalFields>UPDATEDBY_USER</customTabListAdditionalFields>
         <customTabListAdditionalFields>CREATED_DATE</customTabListAdditionalFields>
+        <excludedStandardButtons>PrintableListView</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
         <lookupDialogsAdditionalFields>copado__Type__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>copado__Description__c</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>copado__API_Name__c</lookupDialogsAdditionalFields>
@@ -435,6 +424,15 @@
         <errorConditionFormula>NOT(REGEX( copado__API_Name__c ,&apos;[a-zA-Z_][a-zA-Z0-9_]*&apos;))</errorConditionFormula>
         <errorDisplayField>copado__API_Name__c</errorDisplayField>
         <errorMessage>Api name can only contain alphanumeric characters and must begin with a letter</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>copado__Script_must_contain_a_value</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+NOT(ISNEW()),
+ISBLANK(TRIM(copado__Script__c))
+)</errorConditionFormula>
+        <errorMessage>Script cannot be empty.</errorMessage>
     </validationRules>
     <visibility>Public</visibility>
 </CustomObject>

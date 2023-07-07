@@ -16,7 +16,7 @@
         </style>
         <c:WizardUtils />
         <apex:stylesheet value="{!URLFOR($Resource.copado__CopadoLightningCSS)}" />
-    	<apex:includeScript value="{!URLFOR($Resource.JsRemoting) }"/>
+        <apex:includeScript value="{!URLFOR($Resource.JsRemoting) }"/>
         <apex:includeScript value="{!URLFOR($Resource.statusManager) }" />
         <apex:includeScript value="{!URLFOR($Resource.utilsV2) }"/>
         <c:IncludeStaticsResourceComponent addJQuery="true" addCometdjs="true" addJSON2js="true" addJCometdjs="true"/>
@@ -26,7 +26,7 @@
         </script>
         <c:IncludeConnectionJsComponent />
         <apex:includeScript value="{!URLFOR($Resource.copadoStreamingService) }" />
-        
+
         <c:WizardUtils />
         <script>
             var rock = rock || {};
@@ -38,7 +38,7 @@
     <apex:form ><c:ScreenLocker msg="{!$Label.copado__LOADING}" /></apex:form>
     <apex:sectionHeader rendered="{!mode=='ApexTests'}" id="sectionHeaderApex" title="{!$Label.copado__COPADO_CHANGE_MANAGEMENT}" subtitle="Apex Test Class selector" />
     <apex:sectionHeader rendered="{!mode=='MetaData'}" id="sectionHeaderAll" title="{!$Label.copado__COPADO_CHANGE_MANAGEMENT}" subtitle="Metadata selector" />
-    
+
     <apex:outputPanel id="msg" styleClass="fixedMsg">
         <apex:pageMessages id="theMessages" />
     </apex:outputPanel>
@@ -50,11 +50,13 @@
     </div>
 
     <apex:form id="theForm" rendered="{!hasOrg}" styleClass="copado-lightning-container">
+        <c:SObjectSummaryComponent userStory="{!userStory}" columnsHeader="2" />
+
         <apex:actionFunction name="showMessage" action="{!showMessage}" rerender="msg">
             <apex:param name="errorLevel" assignTo="{!errorLevel}" value="" />
             <apex:param name="messageName" assignTo="{!messageName}" value="" />
-        </apex:actionFunction> 
-            
+        </apex:actionFunction>
+
         <apex:pageBlock id="pb" rendered="{!AND(showOptions,!showError)}" >
             <apex:pageBlockButtons id="pbb_Save" location="top">
                 <apex:commandButton id="btnSave" value="{!$Label.site.save}"  onclick="return copadoApp.save();" rerender="pb" />&nbsp;
@@ -68,24 +70,24 @@
             <apex:outputPanel layout="none" >
                 <div id="metadataGrid2">
                     <div class='mg2_tabs'>
-                      <ul style="margin-left: 20px;">
-                        <li>{!$Label.All_Metadata}</li>
-                        <li>{!$Label.SelectedMetadata}</li>
-                      </ul>
-                      <div>
-                          <div class="mg2_scaleFilterFrame" style="padding: 5px; display: none;">
-                            <label class="mg2_mtFilter">Metadata Type Filter</label>&nbsp;
-                            <apex:commandLink value="({!$Label.copado__REFRESH})"  onclick="return metadataGrid2.refreshMetadataTypes();" rerender="opDummy" id="removeMTCache"/>
-                            <div class="mg2_scaleFilter" style="margin-bottom: 10px;"></div>
-                          </div>
-                      </div>
-                      <div><!-- empty div, needed as content for the two tabs --></div>
+                        <ul style="margin-left: 20px;">
+                            <li>All Metadata</li>
+                            <li>Selected Metadata</li>
+                        </ul>
+                        <div>
+                            <div class="mg2_scaleFilterFrame" style="padding: 5px; display: none;">
+                                <label class="mg2_mtFilter">Metadata Type Filter</label>&nbsp;
+                                <apex:commandLink value="({!$Label.copado__REFRESH})"  onclick="return metadataGrid2.refreshMetadataTypes();" rerender="opDummy" id="removeMTCache"/>
+                                <div class="mg2_scaleFilter" style="margin-bottom: 10px;"></div>
+                            </div>
+                        </div>
+                        <div><!-- empty div, needed as content for the two tabs --></div>
                     </div>
                     <div class="mg2_jqxgrid" >
-                     <center><img src="/img/loading.gif" /><i><span id="retry-label">{!$Label.copado__LOADING}</span></i></center>
+                        <center><img src="/img/loading.gif" /><i><span id="retry-label">{!$Label.copado__LOADING}</span></i></center>
                     </div>
                 </div>
-             </apex:outputPanel>
+            </apex:outputPanel>
         </apex:pageBlock>
         <script>
         	var metadataApp = {
@@ -149,7 +151,7 @@
         <script src="{!URLFOR($Resource.metadataGrid2) }" />
         <script src="{!URLFOR($Resource.metadataselector) }"></script>
     </apex:form>
-    
+
     <script>
         ga('send', 'pageview', {
           'page': '/MetaDataSelector',
