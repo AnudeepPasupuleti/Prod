@@ -607,10 +607,10 @@
         <label>InstalledPackageLayout</label>
     </customValue>
     <customValue>
-        <fullName>ReportTyRole</fullName>
+        <fullName>FlowDefinitioGroup</fullName>
         <default>false</default>
         <isActive>false</isActive>
-        <label>ReportTyRole</label>
+        <label>FlowDefinitioGroup</label>
     </customValue>
     <customValue>
         <fullName>FlexiPaFlow</fullName>
@@ -619,10 +619,10 @@
         <label>FlexiPaFlow</label>
     </customValue>
     <customValue>
-        <fullName>FlowDefinitioGroup</fullName>
+        <fullName>ReportTyRole</fullName>
         <default>false</default>
         <isActive>false</isActive>
-        <label>FlowDefinitioGroup</label>
+        <label>ReportTyRole</label>
     </customValue>
     <masterLabel>Metadata Types</masterLabel>
     <sorted>false</sorted>

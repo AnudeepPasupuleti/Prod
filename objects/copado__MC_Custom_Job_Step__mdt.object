@@ -33,7 +33,4 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <label>MC Custom Job Step</label>
-    <pluralLabel>MC Custom Job Steps</pluralLabel>
-    <visibility>Public</visibility>
 </CustomObject>

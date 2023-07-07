@@ -45,7 +45,4 @@
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
     </fields>
-    <label>UISection</label>
-    <pluralLabel>UISections</pluralLabel>
-    <visibility>Public</visibility>
 </CustomObject>
