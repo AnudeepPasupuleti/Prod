@@ -32,7 +32,9 @@
         <members>ContactRole</members>
         <members>ContactRole</members>
         <members>ContractContactRole</members>
+        <members>ContractLineItemStatus1</members>
         <members>ContractStatus</members>
+        <members>ECTypeContactPointType1</members>
         <members>EntitlementType</members>
         <members>EventSubject</members>
         <members>IdeaMultiCategory</members>
@@ -77,6 +79,7 @@
         <members>ProcessExceptionSeverity</members>
         <members>ProcessExceptionStatus</members>
         <members>Product2Family</members>
+        <members>ProductLineEnum1</members>
         <members>QuantityUnitOfMeasure</members>
         <members>QuantityUnitOfMeasure</members>
         <members>QuantityUnitOfMeasure</members>
@@ -112,5 +115,5 @@
         <members>WorkTypeGroupAddInfo</members>
         <name>StandardValueSet</name>
     </types>
-    <version>57.0</version>
+    <version>58.0</version>
 </Package>
