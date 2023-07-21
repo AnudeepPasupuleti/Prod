@@ -141,15 +141,13 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayoutAssignment>copado__Job_Execution</compactLayoutAssignment>
     <compactLayouts>
         <fullName>copado__Job_Execution</fullName>
         <fields>Name</fields>
+        <fields>copado__Status__c</fields>
         <fields>copado__Template__c</fields>
         <fields>copado__Context__c</fields>
-        <fields>copado__Source__c</fields>
-        <fields>copado__Destination__c</fields>
-        <fields>copado__Status__c</fields>
         <label>Job Execution</label>
     </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
@@ -195,7 +193,7 @@
         <fullName>copado__Context__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
-        <formula>IF(NOT(ISBLANK( copado__Deployment__c )), HYPERLINK(&quot;/&quot;+copado__Deployment__c, &quot;Deployment: &quot;+copado__Deployment__r.Name, &quot;_self&quot;),
+        <formula>IF(NOT(ISBLANK( copado__Deployment__c )), HYPERLINK(&quot;/&quot;+copado__Deployment__r.copado__Promotion__c, &quot;Promotion: &quot;+copado__Deployment__r.copado__Promotion__r.Name, &quot;_self&quot;),
     IF(NOT(ISBLANK( copado__Promotion__c )), HYPERLINK(&quot;/&quot;+copado__Promotion__c, &quot;Promotion: &quot;+copado__Promotion__r.Name, &quot;_self&quot;),
         IF(NOT(ISBLANK( copado__UserStoryCommit__c )), HYPERLINK(&quot;/&quot;+copado__UserStoryCommit__c, &quot;Commit: &quot;+copado__UserStoryCommit__r.Name, &quot;_self&quot;),
             IF(NOT(ISBLANK( copado__Snapshot__c )), HYPERLINK(&quot;/&quot;+copado__Snapshot__c, &quot;Git Snapshot: &quot;+copado__Snapshot__r.Name, &quot;_self&quot;),
@@ -264,6 +262,19 @@
         <trackTrending>false</trackTrending>
         <type>LongTextArea</type>
         <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>copado__Job_Step__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Job Step</label>
+        <referenceTo>copado__JobStep__c</referenceTo>
+        <relationshipLabel>Job Executions</relationshipLabel>
+        <relationshipName>Job_Executions</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>copado__ParentId__c</fullName>

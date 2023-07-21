@@ -15,6 +15,20 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -53,6 +67,20 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
@@ -100,50 +128,23 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
-    <externalSharingModel>Private</externalSharingModel>
-    <fields>
-        <fullName>Balance</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>BillToContactId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>BillingAccountId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
         <fullName>Description</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>DueDate</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>InvoiceDate</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>InvoiceNumber</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>NetCreditsApplied</fullName>
-    </fields>
-    <fields>
-        <fullName>NetPaymentsApplied</fullName>
-    </fields>
-    <fields>
-        <fullName>OwnerId</fullName>
+        <fullName>ParticipantId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>ReferenceEntityId</fullName>
+        <fullName>ServiceAppointmentId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ServiceResourceId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
@@ -152,66 +153,52 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>TotalAdjustmentAmount</fullName>
+        <fullName>WaitlistId</fullName>
         <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
     </fields>
     <fields>
-        <fullName>TotalAdjustmentAmountWithTax</fullName>
-    </fields>
-    <fields>
-        <fullName>TotalAdjustmentTaxAmount</fullName>
-    </fields>
-    <fields>
-        <fullName>TotalAmount</fullName>
-    </fields>
-    <fields>
-        <fullName>TotalAmountWithTax</fullName>
-    </fields>
-    <fields>
-        <fullName>TotalChargeAmount</fullName>
+        <fullName>WorkTypeId</fullName>
         <trackHistory>false</trackHistory>
+        <type>Lookup</type>
     </fields>
-    <fields>
-        <fullName>TotalChargeAmountWithTax</fullName>
-    </fields>
-    <fields>
-        <fullName>TotalChargeTaxAmount</fullName>
-    </fields>
-    <fields>
-        <fullName>TotalTaxAmount</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <listViews>
-        <fullName>mine</fullName>
-        <columns>Name</columns>
-        <columns>BillingAccount</columns>
-        <columns>Status</columns>
-        <columns>TotalAmount</columns>
-        <columns>TotalChargeAmount</columns>
-        <columns>TotalAdjustmentAmount</columns>
-        <columns>TotalTaxAmount</columns>
-        <columns>InvoiceDate</columns>
-        <columns>DueDate</columns>
-        <filterScope>Mine</filterScope>
-        <label>My Invoices</label>
-    </listViews>
     <searchLayouts>
-        <customTabListAdditionalFields>LastModifiedDate</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Waitlist</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Participant</customTabListAdditionalFields>
+        <customTabListAdditionalFields>WorkType</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Description</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ServiceAppointment</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ServiceResource</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status</customTabListAdditionalFields>
         <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
-        <customTabListAdditionalFields>BillingAccount</customTabListAdditionalFields>
-        <customTabListAdditionalFields>BillToContact</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>LastModifiedDate</lookupDialogsAdditionalFields>
+        <customTabListAdditionalFields>LastModifiedDate</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Waitlist</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Participant</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>WorkType</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Description</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ServiceAppointment</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ServiceResource</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>LastModifiedBy</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>BillingAccount</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>BillToContact</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LastModifiedDate</lookupPhoneDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LastModifiedDate</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Waitlist</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Participant</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>WorkType</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Description</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ServiceAppointment</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ServiceResource</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Status</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>LastModifiedBy</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>BillingAccount</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>BillToContact</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LastModifiedDate</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>Waitlist</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Participant</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>WorkType</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Description</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ServiceAppointment</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ServiceResource</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>BillingAccount</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>BillToContact</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>
