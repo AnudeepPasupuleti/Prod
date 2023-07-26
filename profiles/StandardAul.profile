@@ -176,6 +176,10 @@
         <visible>false</visible>
     </applicationVisibilities>
     <classAccesses>
+        <apexClass>AccountUpdateClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>ImportPresetComplianceRules</apexClass>
         <enabled>true</enabled>
     </classAccesses>
