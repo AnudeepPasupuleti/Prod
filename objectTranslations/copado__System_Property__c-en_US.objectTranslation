@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
-        <help><!-- This is the unique name of the system property which is used as a reference in dynamic expressions. --></help>
         <label><!-- API Name --></label>
         <name>copado__API_Name__c</name>
     </fields>
     <fields>
-        <help><!-- Lookup field to the environment which is linked to the system property. --></help>
         <label><!-- Environment --></label>
         <name>copado__Environment__c</name>
         <relationshipLabel><!-- System Properties --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- Select this checbox to hide the sensitive information. --></help>
+        <help><!-- If this field is selected, the value won&apos;t be accessible to any user, and it will be securely saved. The value will remain hidden unless the field is unchecked --></help>
         <label><!-- Hide Value --></label>
         <name>copado__Is_Sensitive__c</name>
     </fields>
@@ -22,7 +20,6 @@
         <name>copado__ParentId__c</name>
     </fields>
     <fields>
-        <help><!-- Lookup field to the pipeline linked to the system property. --></help>
         <label><!-- Pipeline --></label>
         <name>copado__Pipeline__c</name>
         <relationshipLabel><!-- System Properties --></relationshipLabel>
@@ -33,13 +30,11 @@
         <name>copado__UID__c</name>
     </fields>
     <fields>
-        <help><!-- Lookup field to the user linked to the system property. --></help>
         <label><!-- User --></label>
         <name>copado__User__c</name>
         <relationshipLabel><!-- System Properties --></relationshipLabel>
     </fields>
     <fields>
-        <help><!-- This is the value of the system property. --></help>
         <label><!-- Value --></label>
         <name>copado__Value__c</name>
     </fields>

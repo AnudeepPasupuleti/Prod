@@ -19,7 +19,7 @@ utilsV2 = {
                     "Content-Type": "text/json",
                     "userId": _temp_conf.userId,
                     "orgId": _temp_conf.orgId,
-                    "token2": _temp_conf.token2
+                    "token": _temp_conf.token
             },
             method: me.method,
             requestData: {},

@@ -1042,26 +1042,10 @@ MetadataGrid2.prototype.refreshCache = function(callbackFinished) {
         console.info('MetadataGrid2.refreshCache() grid data refreshed');
         that.render();
         unlockScreen();
-        // set refresh cache done
-        $copado('[id="notificationModalRefresh"]').hide();
-        $copado('[id="backDropRefresh"]').hide();
-        clearMessagesMap();
         if (callbackFinished) callbackFinished(cachedDate);
     }, true);
  };
 
- // calls the API to refresh the metadata attachment (filtered or not)
-MetadataGrid2.prototype.refreshDeletedMetadataCache = function(callbackFinished) {
-    var that = this;
-    lockScreen();
-    this.loadData(function(cachedDate) {
-        console.info('MetadataGrid2.refreshCache() grid data refreshed');
-        that.render();
-        unlockScreen();
-        if (callbackFinished) callbackFinished(cachedDate);
-    }, true);
-};
- 
 // changes the grid data, replacing whatever is in there now.
 MetadataGrid2.prototype._matchSelectedItemsWithAllMetaData = function(allMetaData) {
     var i,

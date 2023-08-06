@@ -185,7 +185,7 @@
             <useReportChart>true</useReportChart>
         </components>
     </rightSection>
-    <runningUser>apasupuleti@copado.com.prod</runningUser>
+    <runningUser>apasupuleti@copado.com.uat</runningUser>
     <textColor>#000000</textColor>
     <title>Copado Selenium Testing Summary</title>
     <titleColor>#000000</titleColor>

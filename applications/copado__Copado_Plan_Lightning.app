@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
     <brand>
-        <headerColor>#2463EB</headerColor>
-        <logo>copado__Copado_App_Icon_Plan</logo>
+        <headerColor>#0070D2</headerColor>
+        <logo>copado__CopadoLogoSymbol_Blue1</logo>
         <logoVersion>1</logoVersion>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>

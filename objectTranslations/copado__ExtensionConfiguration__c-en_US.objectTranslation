@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
-        <label><!-- Acceptance Criteria --></label>
-        <name>copado__AcceptanceCriteria__c</name>
-    </fields>
-    <fields>
-        <label><!-- Active --></label>
-        <name>copado__Active__c</name>
-    </fields>
-    <fields>
         <label><!-- Details --></label>
         <name>copado__Details__c</name>
     </fields>
     <fields>
-        <help><!-- Select the Copado Phase based on the Extension Tool you want to use. For example, if you select Test, the Extension Tool picklist will list the available Tools for that specific phase, e.g. Copado Robotic Test, Apex tests, or SCA tools such as PMD or Codescan. --></help>
-        <label><!-- Copado Phase --></label>
+        <help><!-- Select the type of Application that relates to the Extension. --></help>
+        <label><!-- Extension Application --></label>
         <name>copado__ExtensionApplication__c</name>
         <picklistValues>
             <masterLabel>Test</masterLabel>
@@ -22,15 +14,16 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Extension Tool --></label>
-        <name>copado__ExtensionTool__c</name>
+        <help><!-- Select the name of the CMDT Extension for which you are creating the record. --></help>
+        <label><!-- Extension Name --></label>
+        <name>copado__Extension_Name__c</name>
         <picklistValues>
-            <masterLabel>Manual Tests</masterLabel>
-            <translation><!-- Manual Tests --></translation>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Status - Deprecated --></label>
+        <label><!-- Status --></label>
         <name>copado__Status__c</name>
         <picklistValues>
             <masterLabel>Active</masterLabel>
@@ -46,11 +39,28 @@
         </picklistValues>
     </fields>
     <fields>
+        <help><!-- Select the type of test you want to execute with the Extension. --></help>
         <label><!-- Test Type --></label>
-        <name>copado__TestType__c</name>
+        <name>copado__Type__c</name>
+        <picklistValues>
+            <masterLabel>Compliance</masterLabel>
+            <translation><!-- Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Functional</masterLabel>
+            <translation><!-- Functional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security</masterLabel>
+            <translation><!-- Security --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Static Code Analysis</masterLabel>
+            <translation><!-- Static Code Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit Test</masterLabel>
+            <translation><!-- Unit Test --></translation>
+        </picklistValues>
     </fields>
-    <validationRules>
-        <errorMessage><!-- This Extension Tool cannot be modified. Please create a new Extension Configuration record instead. --></errorMessage>
-        <name>copado__PreventUpdatingExtensionTool</name>
-    </validationRules>
 </CustomObjectTranslation>

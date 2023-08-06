@@ -17,7 +17,8 @@ global class Request {
     global Id jobId;
     @InvocableVariable( required=false)
     global Id transactionId;
-    @InvocableVariable( required=false)
-    global String transactionId2;
+    global Request() {
+
+    }
 }
 }
