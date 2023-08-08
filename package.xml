@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>standard-DeleteEvent</members>
-        <name>CustomTab</name>
+        <members>Account__c.testing__c</members>
+        <members>test_obj__c.testedith__c</members>
+        <name>CustomField</name>
     </types>
     <types>
-        <members>Experience_Profile_Manager</members>
-        <name>PermissionSet</name>
+        <members>Account__c</members>
+        <members>test_obj__c</members>
+        <name>CustomObject</name>
     </types>
     <version>58.0</version>
 </Package>
