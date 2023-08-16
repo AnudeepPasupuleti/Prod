@@ -7,7 +7,12 @@
     <enableCoepHeader>false</enableCoepHeader>
     <enableCoopHeader>false</enableCoopHeader>
     <enableRequireHttpsConnection>true</enableRequireHttpsConnection>
-    <networkAccess/>
+    <networkAccess>
+        <ipRanges>
+            <end>34.73.251.139</end>
+            <start>34.73.251.139</start>
+        </ipRanges>
+    </networkAccess>
     <passwordPolicies>
         <complexity>AlphaNumeric</complexity>
         <expiration>NinetyDays</expiration>
@@ -22,6 +27,7 @@
     <redirectBlockModeEnabled>false</redirectBlockModeEnabled>
     <sessionSettings>
         <allowUserAuthenticationByCertificate>false</allowUserAuthenticationByCertificate>
+        <allowUserCertBasedAuthenticationWithOcspValidation>false</allowUserCertBasedAuthenticationWithOcspValidation>
         <canConfirmEmailChangeInLightningCommunities>true</canConfirmEmailChangeInLightningCommunities>
         <canConfirmIdentityBySmsOnly>true</canConfirmIdentityBySmsOnly>
         <disableTimeoutWarning>false</disableTimeoutWarning>
@@ -56,14 +62,16 @@
         <lockSessionsToDomain>true</lockSessionsToDomain>
         <lockSessionsToIp>false</lockSessionsToIp>
         <lockerServiceCSP>true</lockerServiceCSP>
-        <lockerServiceNext>true</lockerServiceNext>
+        <lockerServiceNext>false</lockerServiceNext>
         <lockerServiceNextControl>false</lockerServiceNextControl>
         <redirectBlockModeEnabled>false</redirectBlockModeEnabled>
         <redirectionWarning>true</redirectionWarning>
         <referrerPolicy>true</referrerPolicy>
+        <referrerPolicyDirective>origin-when-cross-origin</referrerPolicyDirective>
         <requireHttpOnly>false</requireHttpOnly>
         <sessionTimeout>TwoHours</sessionTimeout>
         <sidToken3rdPartyAuraApp>false</sidToken3rdPartyAuraApp>
+        <skipSFAWhenMFADirectUILogin>false</skipSFAWhenMFADirectUILogin>
         <useLocalStorageForLogoutUrl>false</useLocalStorageForLogoutUrl>
     </sessionSettings>
     <singleSignOnSettings>

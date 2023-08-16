@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Calls for Resource</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Calls for Resources</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Calls for Resource Field</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Calls for Resource Fields</value>
+        </caseValues>
+        <name>servicecontract_field</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Calls for Resource History</value>
+        </caseValues>
+        <name>servicecontract_history</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Calls for Resource ID</value>
+        </caseValues>
+        <name>servicecontract_id</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Calls for Resource Information</value>
+        </caseValues>
+        <name>servicecontract_information</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Calls for Resource Owner</value>
+        </caseValues>
+        <name>servicecontract_owner</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Calls for Resource Owner Alias</value>
+        </caseValues>
+        <name>servicecontract_owner_alias</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Calls for Resource Owner Role</value>
+        </caseValues>
+        <name>servicecontract_owner_role</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Parent Calls for Resource</value>
+        </caseValues>
+        <name>servicecontract_parent</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Root Calls for Resource</value>
+        </caseValues>
+        <name>servicecontract_root</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -170,6 +170,10 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>IsSerialized</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>Name</fullName>
         <trackHistory>false</trackHistory>
     </fields>
@@ -198,6 +202,10 @@
     </fields>
     <fields>
         <fullName>StockKeepingUnit</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>TransferRecordMode</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>

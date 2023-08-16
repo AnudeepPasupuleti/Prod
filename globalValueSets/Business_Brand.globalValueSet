@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>AlmBrand</fullName>
+        <default>false</default>
+        <label>AlmBrand</label>
+    </customValue>
+    <customValue>
+        <fullName>Codan</fullName>
+        <default>false</default>
+        <label>Codan</label>
+    </customValue>
+    <customValue>
+        <fullName>PSK</fullName>
+        <default>false</default>
+        <label>PSK</label>
+    </customValue>
+    <customValue>
+        <fullName>ESK</fullName>
+        <default>false</default>
+        <label>ESK</label>
+    </customValue>
+    <masterLabel>Business Brand</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

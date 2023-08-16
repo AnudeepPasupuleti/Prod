@@ -241,6 +241,16 @@
         <trackHistory>false</trackHistory>
     </fields>
     <listViews>
+        <fullName>All_Calls_for_Resources</fullName>
+        <columns>CONTRACT.NAME</columns>
+        <columns>CONTRACT.STARTDATE</columns>
+        <columns>CONTRACT.ENDDATE</columns>
+        <columns>CONTRACT.APPROVALSTATUS</columns>
+        <columns>CONTRACT.STATUS</columns>
+        <filterScope>Mine</filterScope>
+        <label>All Calls for Resources</label>
+    </listViews>
+    <listViews>
         <fullName>All_ServiceContracts</fullName>
         <columns>CONTRACT.NAME</columns>
         <columns>CONTRACT.APPROVALSTATUS</columns>

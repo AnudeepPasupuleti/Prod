@@ -154,6 +154,10 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
+        <fullName>IsVisibleInSelfService</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>OwnerId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
@@ -381,9 +385,9 @@
     </listViews>
     <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
-        <fullName>test_1</fullName>
+        <fullName>Test</fullName>
         <active>true</active>
-        <label>test 1</label>
+        <label>Test</label>
         <picklistValues>
             <picklist>Priority</picklist>
             <values>
@@ -442,6 +446,21 @@
             </values>
             <values>
                 <fullName>Send Quote</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>TestTask__c</picklist>
+            <values>
+                <fullName>Cold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hot</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Warm</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

@@ -17,9 +17,13 @@
     <tabs>standard-Incident</tabs>
     <tabs>standard-Problem</tabs>
     <tabs>standard-ChangeRequest</tabs>
+    <tabs>Organization__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningService_UtilityBar</utilityBar>
     <workspaceConfig>
+        <mappings>
+            <tab>Organization__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-Account</tab>
         </mappings>

@@ -113,6 +113,34 @@
         <type>Default</type>
     </actionOverrides>
     <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>TestTask__c</fullName>
+        <externalId>false</externalId>
+        <label>TestTask</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Hot</fullName>
+                    <default>true</default>
+                    <label>Hot</label>
+                </value>
+                <value>
+                    <fullName>Warm</fullName>
+                    <default>false</default>
+                    <label>Warm</label>
+                </value>
+                <value>
+                    <fullName>Cold</fullName>
+                    <default>false</default>
+                    <label>Cold</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
     <listViews>
         <fullName>AllActivities</fullName>
         <filterScope>Team</filterScope>
