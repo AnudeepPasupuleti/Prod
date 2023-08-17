@@ -1,16 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <validationRules>
-        <fullName>copado__Validate_Value_field_against_Operator</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(ISPICKVAL(copado__Operator__c, &apos;All&apos;), NOT(ISBLANK(copado__Value__c)))</errorConditionFormula>
-        <errorDisplayField>copado__Value__c</errorDisplayField>
-        <errorMessage>When the Operator equals &apos;All&apos;, the Value field must be empty.</errorMessage>
-    </validationRules>
-    <validationRules>
-        <fullName>copado__Validate_Value_field_against_Operator_2</fullName>
-        <active>true</active>
-        <errorConditionFormula>AND(!ISPICKVAL(copado__Operator__c, &apos;All&apos;), ISBLANK(copado__Value__c))</errorConditionFormula>
-        <errorMessage>When the Operator is not &quot;All&quot;, a Value is required.</errorMessage>
-    </validationRules>
+    <fields>
+        <fullName>copado__Metadata_Group__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The parent metadata group this item belongs to</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The parent metadata group this item belongs to</inlineHelpText>
+        <label>Parent Group</label>
+        <referenceTo>copado__Metadata_Group__c</referenceTo>
+        <relationshipLabel>Metadata Items</relationshipLabel>
+        <relationshipName>Metadata_Group_Items</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>copado__Operator__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Match &apos;All&apos; metadata of this type, or only metadata whose name matches a pattern?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Match &apos;All&apos; metadata of this type, or only metadata whose name matches a pattern?</inlineHelpText>
+        <label>Metadata Name</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>copado__Operator</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>copado__Type__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The type of metadata</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The type of metadata</inlineHelpText>
+        <label>Metadata Type</label>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>copado__Metadata_Types</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>copado__Value__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Match only metadata whose name matches this value (ignored if Metadata Name = &apos;All&apos; is selected)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Match only metadata whose name matches this value (ignored if Metadata Name = &apos;All&apos; is selected)</inlineHelpText>
+        <label>Value</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
 </CustomObject>
