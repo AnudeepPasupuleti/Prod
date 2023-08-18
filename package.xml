@@ -1248,6 +1248,7 @@
         <members>Individual.SendIndividualData</members>
         <members>Individual.ShouldForget</members>
         <members>Individual.Website</members>
+        <members>Interviewer__c.LastActivityDate</members>
         <members>Invoice.Balance</members>
         <members>Invoice.BillToContactId</members>
         <members>Invoice.BillingAccountId</members>
