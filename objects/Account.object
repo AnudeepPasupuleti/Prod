@@ -113,7 +113,6 @@
         <externalId>false</externalId>
         <label>Testing Auto number</label>
         <type>AutoNumber</type>
-        <startingNumber>439612</startingNumber>
     </fields>
     <fields>
         <fullName>TickerSymbol</fullName>
