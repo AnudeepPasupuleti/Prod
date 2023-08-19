@@ -167,7 +167,7 @@
         <label>autonumber 396</label>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <startingNumber>999</startingNumber>
+        <startingNumber>396</startingNumber>
         <type>AutoNumber</type>
     </fields>
     <fields>
