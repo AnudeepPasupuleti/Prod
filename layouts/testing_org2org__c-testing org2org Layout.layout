@@ -14,6 +14,10 @@
                 <behavior>Readonly</behavior>
                 <field>Count_starts_345__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>test2_for_auto_number__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
