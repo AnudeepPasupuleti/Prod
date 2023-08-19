@@ -1,23 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>test_obj__c.test_number_2__c</members>
-        <members>test_obj__c.test_number__c</members>
-        <members>test_obj__c.testedith__c</members>
-        <name>CustomField</name>
-    </types>
-    <types>
-        <members>Interviewer__c</members>
-        <members>test_obj__c</members>
+        <members>testing_org2org__c</members>
         <name>CustomObject</name>
-    </types>
-    <types>
-        <members>Interviewer__c-Interviewer Layout</members>
-        <name>Layout</name>
-    </types>
-    <types>
-        <members>Interviewer__c</members>
-        <name>SharingRules</name>
     </types>
     <version>58.0</version>
 </Package>
