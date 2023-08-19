@@ -161,6 +161,14 @@
         <trackTrending>false</trackTrending>
         <type>AutoNumber</type>
     </fields>
+    <fields>
+        <fullName>test2_for_auto_number__c</fullName>
+        <externalId>false</externalId>
+        <label>auto 290</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
     <label>testing org2org</label>
     <nameField>
         <label>testing org2org Name</label>
