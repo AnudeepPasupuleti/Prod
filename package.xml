@@ -3,6 +3,7 @@
     <types>
         <members>testing_org2org__c.Count_starts_345__c</members>
         <name>CustomField</name>
+        <startingNumber>999</startingNumber>
     </types>
     <types>
         <members>testing_org2org__c-testing org2org Layout</members>
