@@ -3,7 +3,7 @@
     <types>
         <members>Account.Testing_Auto_number__c</members>
         <name>CustomField</name>
-        <startingNumber>999</startingNumber>
+        <startingNumber>439612</startingNumber>
     </types>
     <types>
         <members>Account-Account %28Marketing%29 Layout</members>
