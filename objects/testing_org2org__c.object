@@ -146,21 +146,29 @@
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>Interviewer</label>
+    <fields>
+        <fullName>Count_starts_345__c</fullName>
+        <externalId>false</externalId>
+        <label>Count starts 345</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <label>testing org2org</label>
     <nameField>
-        <label>Interviewer Name</label>
+        <label>testing org2org Name</label>
+        <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Interviewers</pluralLabel>
-    <searchLayouts/>
+    <pluralLabel>testing org2orgs</pluralLabel>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
-    <startsWith>Vowel</startsWith>
     <visibility>Public</visibility>
 </CustomObject>
