@@ -8,6 +8,11 @@
         <fullName>AgentMessageCount</fullName>
     </fields>
     <fields>
+        <fullName>CaseId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>ChannelKey</fullName>
     </fields>
     <fields>
@@ -37,12 +42,22 @@
         <fullName>EndUserMessageCount</fullName>
     </fields>
     <fields>
+        <fullName>LeadId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>MessagingChannelId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
         <fullName>MessagingEndUserId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OpportunityId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>

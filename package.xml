@@ -1434,8 +1434,12 @@
         <members>MessagingDeliveryError.MessagingEndUserId</members>
         <members>MessagingDeliveryError.MessagingTemplateId</members>
         <members>MessagingDeliveryError.Type</members>
+        <members>MessagingEndUser.AccountId</members>
+        <members>MessagingEndUser.ContactId</members>
+        <members>MessagingEndUser.HasInitialResponseSent</members>
         <members>MessagingEndUser.IsFullyOptedIn</members>
         <members>MessagingEndUser.IsoCountryCode</members>
+        <members>MessagingEndUser.LeadId</members>
         <members>MessagingEndUser.Locale</members>
         <members>MessagingEndUser.MessageType</members>
         <members>MessagingEndUser.MessagingChannelId</members>
@@ -1447,6 +1451,7 @@
         <members>MessagingSession.AcceptTime</members>
         <members>MessagingSession.AgentMessageCount</members>
         <members>MessagingSession.AgentType</members>
+        <members>MessagingSession.CaseId</members>
         <members>MessagingSession.ChannelEndUserFormula</members>
         <members>MessagingSession.ChannelGroup</members>
         <members>MessagingSession.ChannelIntent</members>
@@ -1459,8 +1464,10 @@
         <members>MessagingSession.EndUserAccountId</members>
         <members>MessagingSession.EndUserContactId</members>
         <members>MessagingSession.EndUserMessageCount</members>
+        <members>MessagingSession.LeadId</members>
         <members>MessagingSession.MessagingChannelId</members>
         <members>MessagingSession.MessagingEndUserId</members>
+        <members>MessagingSession.OpportunityId</members>
         <members>MessagingSession.Origin</members>
         <members>MessagingSession.OwnerId</members>
         <members>MessagingSession.PreviewDetails</members>
