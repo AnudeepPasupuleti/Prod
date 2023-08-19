@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>test_obj__c.test_number_2__c</members>
-        <members>test_obj__c.test_number__c</members>
-        <members>test_obj__c.testedith__c</members>
+        <members>Account.Testing_Auto_number__c</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>Interviewer__c</members>
-        <members>test_obj__c</members>
-        <name>CustomObject</name>
-    </types>
-    <types>
-        <members>Interviewer__c-Interviewer Layout</members>
+        <members>Account-Account %28Marketing%29 Layout</members>
+        <members>Account-Account %28Sales%29 Layout</members>
+        <members>Account-Account %28Support%29 Layout</members>
+        <members>Account-Account Layout</members>
+        <members>PersonAccount-Person Account Layout</members>
         <name>Layout</name>
     </types>
     <types>
-        <members>Interviewer__c</members>
-        <name>SharingRules</name>
+        <members>Admin</members>
+        <members>Analytics Cloud Integration User</members>
+        <members>Analytics Cloud Security User</members>
+        <members>Authenticated Website</members>
+        <members>Chatter External User</members>
+        <members>Chatter Free User</members>
+        <members>Chatter Moderator User</members>
+        <members>ContractManager</members>
+        <name>Profile</name>
     </types>
     <version>58.0</version>
 </Package>
