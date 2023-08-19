@@ -48,10 +48,6 @@
                 <field>serial_number_test__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>testing_59536__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Edit</behavior>
                 <field>fsd__c</field>
             </layoutItems>
