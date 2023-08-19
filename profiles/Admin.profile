@@ -16373,6 +16373,11 @@
         <field>testing_org2org__c.Count_starts_345__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>testing_org2org__c.test2_for_auto_number__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>Account-Account Layout</layout>
     </layoutAssignments>
