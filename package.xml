@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
-        <members>testing_org2org__c.test2_for_auto_number__c</members>
+        <members>testing_org2org__c.autonumber_3__c</members>
         <name>CustomField</name>
+    </types>
+    <types>
+        <members>testing_org2org__c</members>
+        <name>CustomObject</name>
     </types>
     <types>
         <members>testing_org2org__c-testing org2org Layout</members>
