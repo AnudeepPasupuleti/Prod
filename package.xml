@@ -3,6 +3,7 @@
     <types>
         <members>testing_org2org__c.test2_for_auto_number__c</members>
         <name>CustomField</name>
+        <startingNumber>290</startingNumber>
     </types>
     <types>
         <members>testing_org2org__c-testing org2org Layout</members>
