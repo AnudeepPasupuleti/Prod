@@ -8,5 +8,13 @@
         <plural>true</plural>
         <value>testing org2orgs</value>
     </caseValues>
+    <fields>
+        <label><!-- Count starts 345 --></label>
+        <name>Count_starts_345__c</name>
+    </fields>
+    <fields>
+        <label><!-- auto 290 --></label>
+        <name>test2_for_auto_number__c</name>
+    </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>
