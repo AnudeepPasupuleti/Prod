@@ -2580,6 +2580,7 @@
         <members>copado__Team__c.LastActivityDate</members>
         <members>copado__User_Story_Task__c.LastActivityDate</members>
         <members>copado__User_Story__c.LastActivityDate</members>
+        <members>testing_org2org__c.LastActivityDate</members>
         <name>CustomField</name>
     </types>
     <version>58.0</version>
