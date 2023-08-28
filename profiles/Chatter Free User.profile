@@ -16242,6 +16242,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>copado__User_Story__c.testingr__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>testing_org2org__c.Count_starts_345__c</field>
         <readable>false</readable>
     </fieldPermissions>

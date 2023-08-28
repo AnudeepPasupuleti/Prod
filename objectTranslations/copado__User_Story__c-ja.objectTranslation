@@ -851,6 +851,10 @@
         <label><!-- testing field --></label>
         <name>testing__c</name>
     </fields>
+    <fields>
+        <label><!-- testingr --></label>
+        <name>testingr__c</name>
+    </fields>
     <nameFieldLabel><!-- User Story Reference --></nameFieldLabel>
     <recordTypes>
         <label><!-- Bug --></label>

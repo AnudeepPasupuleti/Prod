@@ -847,6 +847,10 @@
         <label><!-- testing field --></label>
         <name>testing__c</name>
     </fields>
+    <fields>
+        <label><!-- testingr --></label>
+        <name>testingr__c</name>
+    </fields>
     <recordTypes>
         <label><!-- Bug --></label>
         <name>copado__Bug</name>
