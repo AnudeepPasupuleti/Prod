@@ -162,6 +162,14 @@
         <type>AutoNumber</type>
     </fields>
     <fields>
+        <fullName>autonumber_3__c</fullName>
+        <externalId>false</externalId>
+        <label>autonumber 396</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
         <fullName>test2_for_auto_number__c</fullName>
         <externalId>false</externalId>
         <label>auto 290</label>
