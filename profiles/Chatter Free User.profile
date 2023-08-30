@@ -16252,6 +16252,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>testing_org2org__c.autonumber_3__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>testing_org2org__c.test2_for_auto_number__c</field>
         <readable>false</readable>
     </fieldPermissions>

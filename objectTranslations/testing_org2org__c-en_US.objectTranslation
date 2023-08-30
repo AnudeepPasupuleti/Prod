@@ -13,6 +13,10 @@
         <name>Count_starts_345__c</name>
     </fields>
     <fields>
+        <label><!-- autonumber 396 --></label>
+        <name>autonumber_3__c</name>
+    </fields>
+    <fields>
         <label><!-- auto 290 --></label>
         <name>test2_for_auto_number__c</name>
     </fields>
