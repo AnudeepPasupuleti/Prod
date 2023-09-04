@@ -1713,6 +1713,11 @@
             <isRequired>false</isRequired>
         </displayedFields>
         <displayedFields>
+            <field>testingr__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
             <field>copado__Project__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
@@ -3394,6 +3399,11 @@
         </displayedFields>
         <displayedFields>
             <field>copado__User_Story_Title__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>testingr__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
@@ -8182,6 +8192,26 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>testingr__c</fullName>
+        <externalId>false</externalId>
+        <label>testingr</label>
+        <summaryFilterItems>
+            <field>copado__Deployment_Task__c.copado__Type__c</field>
+            <operation>equals</operation>
+            <value>Manual Task</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>copado__Deployment_Task__c.copado__Disable_Task_for_Back_Promotions__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>copado__Deployment_Task__c.copado__User_Story__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
     </fields>
     <label>User Story</label>
     <listViews>
