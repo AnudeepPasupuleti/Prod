@@ -1146,19 +1146,6 @@ copado__SUM_Deployed__c / copado__Deployment_Jobs_Count__c,
         <type>Lookup</type>
     </fields>
     <label>Deployment</label>
-    <listViews>
-        <fullName>copado__All</fullName>
-        <columns>NAME</columns>
-        <columns>RECORDTYPE</columns>
-        <columns>copado__Date__c</columns>
-        <columns>copado__Status__c</columns>
-        <columns>copado__Deployed__c</columns>
-        <columns>copado__Completed__c</columns>
-        <columns>copado__From_Org__c</columns>
-        <columns>CREATED_DATE</columns>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-    </listViews>
     <nameField>
         <label>Deployment Name</label>
         <trackHistory>false</trackHistory>

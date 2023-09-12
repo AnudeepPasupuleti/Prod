@@ -301,6 +301,17 @@
         <type>Lookup</type>
     </fields>
     <label>Copado Deployment History</label>
+    <listViews>
+        <fullName>New_All</fullName>
+        <columns>NAME</columns>
+        <columns>copado__Date__c</columns>
+        <columns>copado__Deployment__c</columns>
+        <columns>copado__Deployment_Id__c</columns>
+        <columns>copado__Event__c</columns>
+        <columns>copado__Field__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>New All</label>
+    </listViews>
     <nameField>
         <displayFormat>CDH-{0000000}</displayFormat>
         <label>Copado Deployment History Name</label>
