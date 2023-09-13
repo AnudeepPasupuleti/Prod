@@ -10,8 +10,12 @@
     <tabs>standard-CmsChannel</tabs>
     <tabs>standard-CmsWorkspaces</tabs>
     <tabs>standard-CmsExperiences</tabs>
+    <tabs>copado__Deployment_History__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
+        <mappings>
+            <tab>copado__Deployment_History__c</tab>
+        </mappings>
         <mappings>
             <tab>standard-CmsAuthorHome</tab>
         </mappings>

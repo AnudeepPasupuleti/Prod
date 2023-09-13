@@ -196,6 +196,10 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>TestAccountUpdateClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>copadoQuality__AbstractTestData</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -17568,6 +17572,10 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>copado__Deployment_Flow__c</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>copado__Deployment_History__c</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>

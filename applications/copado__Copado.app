@@ -30,4 +30,5 @@
     <tabs>copado__JobTemplate__c</tabs>
     <tabs>copado__JobExecution__c</tabs>
     <tabs>copado__Stage__c</tabs>
+    <tabs>copado__Deployment_History__c</tabs>
 </CustomApplication>

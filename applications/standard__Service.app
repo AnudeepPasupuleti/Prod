@@ -12,4 +12,5 @@
     <tabs>standard-Solution</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
+    <tabs>copado__Deployment_History__c</tabs>
 </CustomApplication>

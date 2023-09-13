@@ -25,6 +25,7 @@
     <tabs>standard-OtherUserProfile</tabs>
     <tabs>standard-Case</tabs>
     <tabs>standard-Forecasting3</tabs>
+    <tabs>copado__Deployment_History__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>LightningSales_UtilityBar</utilityBar>
 </CustomApplication>
