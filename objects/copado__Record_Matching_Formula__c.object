@@ -287,7 +287,7 @@
     <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>copado__RestrictSchemaCredentialModification</fullName>
-        <active>true</active>
+        <active>false</active>
         <errorConditionFormula>AND(NOT(ISNEW()),ISCHANGED( copado__Configuration_Source_Org__c))</errorConditionFormula>
         <errorDisplayField>copado__Configuration_Source_Org__c</errorDisplayField>
         <errorMessage>You can not change the Configuration Schema Credential once the value is selected.</errorMessage>
