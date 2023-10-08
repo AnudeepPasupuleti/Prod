@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
-    <webLinks>
-        <fullName>copado__Select_Branch</fullName>
-        <availability>online</availability>
-        <displayType>button</displayType>
-        <height>600</height>
-        <linkType>page</linkType>
-        <masterLabel>Select Branch</masterLabel>
-        <openType>sidebar</openType>
-        <page>copado__DeploymentFlowStepBranchSelection</page>
-        <protected>false</protected>
-    </webLinks>
+    <validationRules>
+        <fullName>copado__EnvironmentAndPipelinePlatformMustBeSame</fullName>
+        <active>true</active>
+        <errorConditionFormula>OR( 
+    BLANKVALUE(TEXT(copado__Destination_Environment__r.copado__Platform__c), &apos;Salesforce&apos;) &lt;&gt; BLANKVALUE(TEXT(copado__Deployment_Flow__r.copado__Platform__c), &apos;Salesforce&apos;), 
+    BLANKVALUE(TEXT(copado__Source_Environment__r.copado__Platform__c), &apos;Salesforce&apos;) &lt;&gt; BLANKVALUE(TEXT(copado__Deployment_Flow__r.copado__Platform__c), &apos;Salesforce&apos;)
+)</errorConditionFormula>
+        <errorMessage>Platform for pipeline and Environment must match</errorMessage>
+    </validationRules>
 </CustomObject>
