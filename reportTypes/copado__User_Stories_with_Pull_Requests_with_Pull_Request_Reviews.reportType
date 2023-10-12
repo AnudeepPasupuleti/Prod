@@ -369,6 +369,11 @@
             <field>Testing2__c</field>
             <table>copado__User_Story__c</table>
         </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Requested_Reviewers_Long__c</field>
+            <table>copado__User_Story__c</table>
+        </columns>
         <masterLabel>User Stories</masterLabel>
     </sections>
     <sections>
@@ -490,6 +495,11 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>copado__Username__c</field>
+            <table>copado__User_Story__c.copado__Pull_Requests__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Requested_Reviewers_Long__c</field>
             <table>copado__User_Story__c.copado__Pull_Requests__r</table>
         </columns>
         <masterLabel>Pull Requests</masterLabel>

@@ -5,6 +5,10 @@
         <value><!-- Pull Request --></value>
     </caseValues>
     <fields>
+        <label><!-- Requested Reviewers Long --></label>
+        <name>Requested_Reviewers_Long__c</name>
+    </fields>
+    <fields>
         <label><!-- Assignees --></label>
         <name>copado__Assignees__c</name>
     </fields>

@@ -13869,6 +13869,11 @@
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>copado__Pull_Request__c.Requested_Reviewers_Long__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>copado__Pull_Request__c.copado__Assignees__c</field>
         <readable>false</readable>
@@ -15872,6 +15877,11 @@
         <editable>false</editable>
         <field>copado__User_Story_Task__c.copado__Subject__c</field>
         <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>copado__User_Story__c.Requested_Reviewers_Long__c</field>
+        <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
