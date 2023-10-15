@@ -4,33 +4,27 @@
         <customLabel>false</customLabel>
         <detailHeading>false</detailHeading>
         <editHeading>false</editHeading>
+        <label>Information</label>
         <layoutColumns>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>Name</field>
+                <field>CartCheckoutSessionId</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>CartId</field>
+                <field>CartDeliveryGroupId</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Required</behavior>
-                <field>CreatedDate</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>SelectedDeliveryMethodId</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>DesiredDeliveryDate</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Required</behavior>
-                <field>ShippingInstructions</field>
+                <field>WebCartId</field>
             </layoutItems>
         </layoutColumns>
-        <layoutColumns/>
+        <layoutColumns>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>ShippingFee</field>
+            </layoutItems>
+        </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
     </layoutSections>
     <layoutSections>
@@ -40,14 +34,6 @@
         <layoutColumns/>
         <style>CustomLinks</style>
     </layoutSections>
-    <miniLayout>
-        <fields>Name</fields>
-        <fields>CartId</fields>
-        <fields>CreatedDate</fields>
-        <fields>SelectedDeliveryMethodId</fields>
-        <fields>DesiredDeliveryDate</fields>
-        <fields>ShippingInstructions</fields>
-    </miniLayout>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>
     <showSubmitAndAttachButton>false</showSubmitAndAttachButton>
