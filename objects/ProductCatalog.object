@@ -71,16 +71,16 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>NewIRI</actionName>
+        <actionName>New</actionName>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>NewIRI</actionName>
+        <actionName>New</actionName>
         <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>NewIRI</actionName>
+        <actionName>New</actionName>
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
@@ -128,39 +128,21 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
-    <externalSharingModel>ControlledByParent</externalSharingModel>
-    <fields>
-        <fullName>AssetId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Comment</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>ImpactLevel</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>ImpactType</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>IncidentId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>MasterDetail</type>
-    </fields>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Name</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>Product2Id</fullName>
+        <fullName>OwnerId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
-    <sharingModel>ControlledByParent</sharingModel>
+    <listViews>
+        <fullName>All_Product_Catalogs_List_View</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Catalogs</label>
+    </listViews>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
 </CustomObject>

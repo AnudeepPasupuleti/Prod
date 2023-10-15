@@ -72,68 +72,16 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
-    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>CartId</fullName>
-        <type>MasterDetail</type>
+        <fullName>Label</fullName>
     </fields>
     <fields>
-        <fullName>CompanyName</fullName>
-    </fields>
-    <fields>
-        <fullName>DeliverToFirstName</fullName>
-    </fields>
-    <fields>
-        <fullName>DeliverToLastName</fullName>
-    </fields>
-    <fields>
-        <fullName>DeliverToName</fullName>
-    </fields>
-    <fields>
-        <fullName>DesiredDeliveryDate</fullName>
-    </fields>
-    <fields>
-        <fullName>GrandTotalAmount</fullName>
-    </fields>
-    <fields>
-        <fullName>IsDefault</fullName>
-    </fields>
-    <fields>
-        <fullName>Name</fullName>
-    </fields>
-    <fields>
-        <fullName>SelectedDeliveryMethodId</fullName>
+        <fullName>OrchestrationInstanceId</fullName>
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>ShipToPhoneNumber</fullName>
+        <fullName>Status</fullName>
     </fields>
-    <fields>
-        <fullName>ShippingInstructions</fullName>
-    </fields>
-    <fields>
-        <fullName>TotalAdjustmentAmount</fullName>
-    </fields>
-    <fields>
-        <fullName>TotalAdjustmentTaxAmount</fullName>
-    </fields>
-    <fields>
-        <fullName>TotalAmount</fullName>
-    </fields>
-    <fields>
-        <fullName>TotalChargeAmount</fullName>
-    </fields>
-    <fields>
-        <fullName>TotalChargeTaxAmount</fullName>
-    </fields>
-    <fields>
-        <fullName>TotalProductAmount</fullName>
-    </fields>
-    <fields>
-        <fullName>TotalProductTaxAmount</fullName>
-    </fields>
-    <fields>
-        <fullName>TotalTaxAmount</fullName>
-    </fields>
-    <sharingModel>ControlledByParent</sharingModel>
+    <sharingModel>Private</sharingModel>
 </CustomObject>
