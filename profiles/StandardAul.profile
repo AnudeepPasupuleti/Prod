@@ -16821,6 +16821,9 @@
         <layout>WorkTypeGroupMember-Work Type Group Member Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
+        <layout>test__mdt-test Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>testing_org2org__c-testing org2org Layout</layout>
     </layoutAssignments>
     <objectPermissions>
@@ -18403,6 +18406,14 @@
         <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
+        <tab>standard-InventoryItemReservation</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-InventoryReservation</tab>
+        <visibility>Hidden</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
         <tab>standard-Invoice</tab>
         <visibility>Hidden</visibility>
     </tabVisibilities>
@@ -18593,6 +18604,10 @@
     <tabVisibilities>
         <tab>standard-Waitlist</tab>
         <visibility>DefaultOff</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-WebStoreInventorySource</tab>
+        <visibility>Hidden</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>standard-WorkOrder</tab>
