@@ -28,6 +28,10 @@
                 <showScrollbars>false</showScrollbars>
                 <width>100%</width>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Requested_Reviewers_Long__c</field>
+            </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>
@@ -64,6 +68,10 @@
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>testingr__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Testing2__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>

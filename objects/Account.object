@@ -109,6 +109,12 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Testing_Auto_number__c</fullName>
+        <externalId>false</externalId>
+        <label>Testing Auto number</label>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
         <fullName>TickerSymbol</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
