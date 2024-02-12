@@ -141,7 +141,18 @@
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
-    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <compactLayoutAssignment>copado__Release_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>copado__Release_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>copado__Project__c</fields>
+        <fields>copado__Type__c</fields>
+        <fields>copado__Version__c</fields>
+        <fields>copado__Status__c</fields>
+        <fields>copado__Planned_Date__c</fields>
+        <fields>copado__Completion_Date__c</fields>
+        <label>Release Compact Layout</label>
+    </compactLayouts>
     <deploymentStatus>Deployed</deploymentStatus>
     <deprecated>false</deprecated>
     <enableActivities>false</enableActivities>
@@ -275,7 +286,7 @@
         <inlineHelpText>Informative field to define a parent release</inlineHelpText>
         <label>Parent Release</label>
         <referenceTo>copado__Release__c</referenceTo>
-        <relationshipLabel>Releases</relationshipLabel>
+        <relationshipLabel>Child Releases</relationshipLabel>
         <relationshipName>Releases</relationshipName>
         <required>false</required>
         <trackTrending>false</trackTrending>
@@ -401,6 +412,48 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>copadoconnect__Connect_log__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Connect log</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>copadoconnect__External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>copadoconnect__Last_Synced_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Last Synced Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>copadoconnect__Pipeline_definition__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Pipeline definition</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <label>Release</label>
     <listViews>
         <fullName>copado__All</fullName>
@@ -462,5 +515,23 @@
         <openType>sidebar</openType>
         <page>copado__ReleaseBranchSelection</page>
         <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>copado__Switch_to_previous_UI</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>Switch to previous UI</masterLabel>
+        <openType>newWindow</openType>
+        <page>copado__ViewRelease</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
     </webLinks>
 </CustomObject>
