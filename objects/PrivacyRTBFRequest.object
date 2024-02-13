@@ -74,70 +74,40 @@
     <enableFeeds>false</enableFeeds>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>AssigneeId</fullName>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>Description</fullName>
-    </fields>
-    <fields>
-        <fullName>Label</fullName>
+        <fullName>JobRecord</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>RelatedRecordId</fullName>
+        <fullName>PolicyNameId</fullName>
+        <trackHistory>false</trackHistory>
         <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>ScreenFlow</fullName>
     </fields>
     <fields>
         <fullName>Status</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
-    <fields>
-        <fullName>StepInstanceId</fullName>
-        <type>Lookup</type>
-    </fields>
-    <listViews>
-        <fullName>ALL_Open_Work_Items</fullName>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Status</field>
-            <operation>equals</operation>
-            <value>ASG</value>
-        </filters>
-        <label>All Open Work Items</label>
-    </listViews>
-    <listViews>
-        <fullName>All_Work_Items</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All Work Items</label>
-    </listViews>
     <searchLayouts>
-        <lookupDialogsAdditionalFields>RelatedRecord</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Label</lookupDialogsAdditionalFields>
+        <customTabListAdditionalFields>PolicyName</customTabListAdditionalFields>
+        <customTabListAdditionalFields>JobRecord</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Status</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Description</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>PolicyName</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>JobRecord</lookupDialogsAdditionalFields>
         <lookupDialogsAdditionalFields>Status</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>Assignee</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LastModifiedBy</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LastModifiedDate</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>CreatedDate</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>RelatedRecord</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Label</lookupPhoneDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Description</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>PolicyName</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>JobRecord</lookupPhoneDialogsAdditionalFields>
         <lookupPhoneDialogsAdditionalFields>Status</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>Assignee</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LastModifiedBy</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LastModifiedDate</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>CreatedDate</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>RelatedRecord</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Label</searchResultsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Description</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>PolicyName</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>JobRecord</searchResultsAdditionalFields>
         <searchResultsAdditionalFields>Status</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>Assignee</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>CreatedDate</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Description</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>Private</sharingModel>
 </CustomObject>
