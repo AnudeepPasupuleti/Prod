@@ -15,34 +15,6 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Clone</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>Edit</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -67,20 +39,6 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>List</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
@@ -128,34 +86,79 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
         <fullName>Description</fullName>
     </fields>
     <fields>
-        <fullName>Name</fullName>
+        <fullName>EndDate</fullName>
     </fields>
     <fields>
-        <fullName>OwnerId</fullName>
+        <fullName>FulfillmentOrderId</fullName>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>GrossUnitPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>IsReship</fullName>
+    </fields>
+    <fields>
+        <fullName>OrderItemId</fullName>
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>TimeZone</fullName>
+        <fullName>OriginalQuantity</fullName>
     </fields>
-    <listViews>
-        <fullName>All_OperatingHours</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All Operating Hours</label>
-    </listViews>
-    <searchLayouts>
-        <customTabListAdditionalFields>LastModifiedDate</customTabListAdditionalFields>
-        <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>LastModifiedDate</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LastModifiedBy</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LastModifiedDate</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LastModifiedBy</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>Quantity</fullName>
+    </fields>
+    <fields>
+        <fullName>QuantityUnitOfMeasure</fullName>
+    </fields>
+    <fields>
+        <fullName>RejectReason</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RejectedQuantity</fullName>
+    </fields>
+    <fields>
+        <fullName>ReshipReason</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ServiceDate</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalAdjustmentAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalAdjustmentAmountWithTax</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalAdjustmentTaxAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalLineAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalLineAmountWithTax</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalLineTaxAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalPrice</fullName>
+    </fields>
+    <fields>
+        <fullName>TotalTaxAmount</fullName>
+    </fields>
+    <fields>
+        <fullName>UnitPrice</fullName>
+    </fields>
+    <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>
