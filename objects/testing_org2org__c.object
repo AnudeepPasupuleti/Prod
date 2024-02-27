@@ -154,14 +154,6 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>Count_starts_345__c</fullName>
-        <externalId>false</externalId>
-        <label>Count starts 345</label>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>AutoNumber</type>
-    </fields>
-    <fields>
         <fullName>autonumber_3__c</fullName>
         <externalId>false</externalId>
         <label>autonumber 396</label>
@@ -184,7 +176,7 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>testing org2orgs</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>
