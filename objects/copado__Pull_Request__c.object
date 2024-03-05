@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <fields>
+        <fullName>Requested_Reviewers_Long__c</fullName>
+        <externalId>false</externalId>
+        <label>Requested Reviewers Long</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>15</visibleLines>
+    </fields>
+    <fields>
         <fullName>copado__Assignees__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
@@ -111,6 +120,17 @@
         <trackTrending>false</trackTrending>
         <type>Number</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>copado__Requested_Reviewers_Long__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field has been replaced by the copado__Requested_Reviewers_Long__c field.</description>
+        <externalId>false</externalId>
+        <label>Requested Reviewers</label>
+        <length>131072</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
     </fields>
     <fields>
         <fullName>copado__Requested_Reviewers__c</fullName>
