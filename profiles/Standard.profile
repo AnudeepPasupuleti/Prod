@@ -196,6 +196,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>TestAccountUpdateClass</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>copadoQuality__AbstractTestData</apexClass>
         <enabled>true</enabled>
     </classAccesses>
