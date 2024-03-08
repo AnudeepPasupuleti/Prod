@@ -2,7 +2,12 @@
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
     <types>
         <members>AccountUpdateClass</members>
+        <members>TestAccountUpdateClass</members>
         <name>ApexClass</name>
+    </types>
+    <types>
+        <members>Lead.Test lead</members>
+        <name>AssignmentRule</name>
     </types>
     <types>
         <members>Account.Anudeeptest__c</members>
@@ -18,6 +23,7 @@
     <types>
         <members>Admin</members>
         <members>Analytics Cloud Integration User</members>
+        <members>Standard</members>
         <name>Profile</name>
     </types>
     <types>
