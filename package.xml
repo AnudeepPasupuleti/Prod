@@ -6,17 +6,10 @@
         <name>ApexClass</name>
     </types>
     <types>
-        <members>Lead.Test lead</members>
-        <name>AssignmentRule</name>
-    </types>
-    <types>
         <members>Account.Anudeeptest__c</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>Account-Account %28Marketing%29 Layout</members>
-        <members>Account-Account %28Sales%29 Layout</members>
-        <members>Account-Account %28Support%29 Layout</members>
         <members>Account-Account Layout</members>
         <name>Layout</name>
     </types>
@@ -25,10 +18,6 @@
         <members>Analytics Cloud Integration User</members>
         <members>Standard</members>
         <name>Profile</name>
-    </types>
-    <types>
-        <members>Account.MAster_Default</members>
-        <name>RecordType</name>
     </types>
     <version>60.0</version>
 </Package>
