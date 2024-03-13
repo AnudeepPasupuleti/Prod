@@ -13306,11 +13306,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
-        <field>testing_org2org__c.Count_starts_345__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>false</editable>
         <field>testing_org2org__c.autonumber_3__c</field>
         <readable>true</readable>
     </fieldPermissions>

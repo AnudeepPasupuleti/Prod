@@ -450,6 +450,12 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
+        <fullName>Testing_Auto_number__c</fullName>
+        <externalId>false</externalId>
+        <label>Testing Auto number</label>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
         <fullName>TickerSymbol</fullName>
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
@@ -502,15 +508,9 @@
         <trackFeedHistory>false</trackFeedHistory>
     </fields>
     <fields>
-        <fullName>serial_number_test__c</fullName>
+        <fullName>fsd__c</fullName>
         <externalId>false</externalId>
-        <label>serial number test</label>
-        <type>AutoNumber</type>
-    </fields>
-    <fields>
-        <fullName>testing_currency__c</fullName>
-        <externalId>false</externalId>
-        <label>testing currency</label>
+        <label>fsd</label>
         <precision>18</precision>
         <required>false</required>
         <scale>0</scale>
@@ -518,10 +518,16 @@
         <type>Currency</type>
     </fields>
     <fields>
-        <fullName>testing_org2orgfg__c</fullName>
+        <fullName>serial_number_test__c</fullName>
+        <externalId>false</externalId>
+        <label>serial number test</label>
+        <type>AutoNumber</type>
+    </fields>
+    <fields>
+        <fullName>testing_org2org__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
-        <label>testing org2orgfg</label>
+        <label>testing org2org</label>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Checkbox</type>
     </fields>
@@ -565,6 +571,11 @@
         <filterScope>Everything</filterScope>
         <label>Platinum and Gold SLA Customers</label>
     </listViews>
+    <recordTypes>
+        <fullName>MAster_Default</fullName>
+        <active>true</active>
+        <label>MAster Default</label>
+    </recordTypes>
     <searchLayouts>
         <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
         <customTabListAdditionalFields>ACCOUNT.ADDRESS1_CITY</customTabListAdditionalFields>
