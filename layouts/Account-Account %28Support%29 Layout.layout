@@ -39,30 +39,6 @@
                 <behavior>Edit</behavior>
                 <field>Website</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>serial_number_{!Environment.{!Environment.testt}t}__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>{!Environment.{!Environment.testt}t}ing_59536__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>fsd__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Readonly</behavior>
-                <field>Testing_Auto_number__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Harsha_case_{!Environment.{!Environment.testt}t}__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Anudeep{!Environment.{!Environment.testt}t}__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -207,6 +183,21 @@
     <platformActionList>
         <actionListContext>Record</actionListContext>
         <platformActionListItems>
+            <actionName>SmsHighlightAction</actionName>
+            <actionType>ProductivityAction</actionType>
+            <sortOrder>25</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>EmailHighlightAction</actionName>
+            <actionType>ProductivityAction</actionType>
+            <sortOrder>26</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
+            <actionName>WebsiteHighlightAction</actionName>
+            <actionType>ProductivityAction</actionType>
+            <sortOrder>27</sortOrder>
+        </platformActionListItems>
+        <platformActionListItems>
             <actionName>FeedItem.TextPost</actionName>
             <actionType>QuickAction</actionType>
             <sortOrder>0</sortOrder>
@@ -331,21 +322,6 @@
             <actionType>ProductivityAction</actionType>
             <sortOrder>24</sortOrder>
         </platformActionListItems>
-        <platformActionListItems>
-            <actionName>SmsHighlightAction</actionName>
-            <actionType>ProductivityAction</actionType>
-            <sortOrder>25</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>EmailHighlightAction</actionName>
-            <actionType>ProductivityAction</actionType>
-            <sortOrder>26</sortOrder>
-        </platformActionListItems>
-        <platformActionListItems>
-            <actionName>WebsiteHighlightAction</actionName>
-            <actionType>ProductivityAction</actionType>
-            <sortOrder>27</sortOrder>
-        </platformActionListItems>
     </platformActionList>
     <quickActionList>
         <quickActionListItems>
@@ -440,8 +416,6 @@
         <fields>ACCOUNT.NAME</fields>
         <fields>OPPORTUNITY.NAME</fields>
         <fields>PARTNER.ROLE</fields>
-        <fields>ACCOUNT.PC_TITLE</fields>
-        <fields>ACCOUNT.PC_EMAIL</fields>
         <relatedList>RelatedPartnerList</relatedList>
     </relatedLists>
     <relatedObjects>ParentId</relatedObjects>

@@ -24,6 +24,14 @@
         <type>Number</type>
         <unique>false</unique>
     </fields>
+    <fields>
+        <fullName>testedith__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>testedith</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
     <label>test_obj</label>
     <visibility>Public</visibility>
 </CustomObject>
