@@ -321,6 +321,11 @@
                     <default>false</default>
                     <label>Destructive Changes</label>
                 </value>
+                <value>
+                    <fullName>Full Profiles &amp; Permission Sets</fullName>
+                    <default>false</default>
+                    <label>Full Profiles &amp; Permission Sets</label>
+                </value>
             </valueSetDefinition>
         </valueSet>
     </fields>

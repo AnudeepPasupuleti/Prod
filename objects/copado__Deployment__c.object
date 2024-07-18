@@ -58,7 +58,9 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>Edit</actionName>
-        <type>Default</type>
+        <content>copado__Deployment</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
     </actionOverrides>
     <actionOverrides>
         <actionName>Edit</actionName>
@@ -528,11 +530,6 @@
             <isRequired>false</isRequired>
         </availableFields>
         <availableFields>
-            <field>copado__Promotion__r.copado__Project__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
             <field>copado__Promotion__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
@@ -569,6 +566,11 @@
         </availableFields>
         <availableFields>
             <field>copado__Source_Environment__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>copado__Promotion__r.copado__Status__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
         </availableFields>
@@ -615,6 +617,20 @@
         </displayedFields>
         <label>Pipeline Deployment Modal</label>
     </fieldSets>
+    <fields>
+        <fullName>copadoAiHelper__Copado_AI_Companion_Link__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Link to open Copado AI Companion</description>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/flow/copadoAiHelper/Copado_DevOps_AI_Companion?recordId=&quot;&amp;Id, &quot;[Open Chat]&quot; ,&quot;_blank&quot;)</formula>
+        <inlineHelpText>Link to open Copado AI Companion</inlineHelpText>
+        <label>Copado AI Companion Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
     <fields>
         <fullName>copado__Active__c</fullName>
         <defaultValue>false</defaultValue>
@@ -1146,19 +1162,6 @@ copado__SUM_Deployed__c / copado__Deployment_Jobs_Count__c,
         <type>Lookup</type>
     </fields>
     <label>Deployment</label>
-    <listViews>
-        <fullName>copado__All</fullName>
-        <columns>NAME</columns>
-        <columns>RECORDTYPE</columns>
-        <columns>copado__Date__c</columns>
-        <columns>copado__Status__c</columns>
-        <columns>copado__Deployed__c</columns>
-        <columns>copado__Completed__c</columns>
-        <columns>copado__From_Org__c</columns>
-        <columns>CREATED_DATE</columns>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-    </listViews>
     <nameField>
         <label>Deployment Name</label>
         <trackHistory>false</trackHistory>

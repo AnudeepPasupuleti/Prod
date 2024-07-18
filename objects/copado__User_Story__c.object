@@ -592,6 +592,16 @@
     <fieldSets>
         <fullName>copado__Bundle_Sync_Fields</fullName>
         <availableFields>
+            <field>copado__Acceptance_Criteria_Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
+            <field>copado__Acceptance_Criteria__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </availableFields>
+        <availableFields>
             <field>copado__Apex_Code_Coverage__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
@@ -702,16 +712,6 @@
             <isRequired>false</isRequired>
         </availableFields>
         <availableFields>
-            <field>Id</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Is_Bundle__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
             <field>copado__Last_Compliance_Scan_Date__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
@@ -792,16 +792,6 @@
             <isRequired>false</isRequired>
         </availableFields>
         <availableFields>
-            <field>copado__Promote_Change__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>copado__Promote_and_Deploy__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
             <field>copado__Promote_as_Single_Step__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
@@ -813,11 +803,6 @@
         </availableFields>
         <availableFields>
             <field>copado__Pull_Requests_Approved__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>RecordTypeId</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
         </availableFields>
@@ -848,11 +833,6 @@
         </availableFields>
         <availableFields>
             <field>copado__Story_Points_SFDC__c</field>
-            <isFieldManaged>false</isFieldManaged>
-            <isRequired>false</isRequired>
-        </availableFields>
-        <availableFields>
-            <field>SystemModstamp</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
         </availableFields>
@@ -1709,6 +1689,11 @@
         </displayedFields>
         <displayedFields>
             <field>copado__Status__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>testingr__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
@@ -3397,6 +3382,11 @@
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
+        <displayedFields>
+            <field>testingr__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
         <label>Mass Back Promote</label>
     </fieldSets>
     <fieldSets>
@@ -4194,6 +4184,11 @@
         <description>This FieldSet will include fields shown in the Promotion VF page, so you can design the information you want to see from the User Stories.</description>
         <displayedFields>
             <field>Name</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>testingr__c</field>
             <isFieldManaged>false</isFieldManaged>
             <isRequired>false</isRequired>
         </displayedFields>
@@ -6605,6 +6600,25 @@
         <label>Work Manager Relations</label>
     </fieldSets>
     <fields>
+        <fullName>Requested_Reviewers_Long__c</fullName>
+        <externalId>false</externalId>
+        <label>Requested Reviewers Long</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>15</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Testing2__c</fullName>
+        <externalId>false</externalId>
+        <formula>testingr__c  = 0 &amp;&amp;  copado__Org_Credential__c  &lt;&gt; &apos;&apos;</formula>
+        <label>Testing2</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>copado__Acceptance_Criteria_Status__c</fullName>
         <deprecated>false</deprecated>
         <externalId>false</externalId>
@@ -6713,7 +6727,7 @@
     <fields>
         <fullName>copado__Base_Branch__c</fullName>
         <deprecated>false</deprecated>
-        <description>Git branch which the feature branch is created from. This value is updated when committing in the user story and by default, it will be the main branch of the Deployment Flow or the base branch of the Release linked to the user story.</description>
+        <description>Git branch which the feature branch is created from. This value is updated when committing in the user story and by default, it will be the main branch of the Pipeline or the base branch of the Release linked to the user story.</description>
         <externalId>false</externalId>
         <inlineHelpText>Git branch which the feature branch is created from. This value is updated when committing in the user story and by default, it will be the main branch of the Deployment Flow or the base branch of the Release linked to the user story.e user story.</inlineHelpText>
         <label>Base Branch</label>
@@ -8173,6 +8187,40 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <type>TextArea</type>
     </fields>
     <fields>
+        <fullName>copadoconnect__Connect_log__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Connect log</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>copadoconnect__External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <label>External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>copadoconnect__Last_Synced_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Last Synced Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
         <fullName>testing__c</fullName>
         <externalId>false</externalId>
         <label>testing field</label>
@@ -8182,6 +8230,26 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>testingr__c</fullName>
+        <externalId>false</externalId>
+        <label>testingr</label>
+        <summaryFilterItems>
+            <field>copado__Deployment_Task__c.copado__Type__c</field>
+            <operation>equals</operation>
+            <value>Manual Task</value>
+        </summaryFilterItems>
+        <summaryFilterItems>
+            <field>copado__Deployment_Task__c.copado__Disable_Task_for_Back_Promotions__c</field>
+            <operation>equals</operation>
+            <value>False</value>
+        </summaryFilterItems>
+        <summaryForeignKey>copado__Deployment_Task__c.copado__User_Story__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
     </fields>
     <label>User Story</label>
     <listViews>
