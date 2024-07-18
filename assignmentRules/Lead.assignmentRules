@@ -26,7 +26,10 @@
         <fullName>Test lead</fullName>
         <active>true</active>
         <ruleEntry>
+            <assignedTo>testuser@copa8.com</assignedTo>
+
             <assignedTo>{!Environment.{!Environment.testt}t}user@copa8.com</assignedTo>
+
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Lead.LeadSource</field>
@@ -35,4 +38,5 @@
             </criteriaItems>
         </ruleEntry>
     </assignmentRule>
+
 </AssignmentRules>
