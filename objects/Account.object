@@ -239,7 +239,6 @@
     </fields>
     <fields>
         <fullName>Active__c</fullName>
-        <externalId>false</externalId>
         <label>Active</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -274,7 +273,6 @@
     </fields>
     <fields>
         <fullName>CustomerPriority__c</fullName>
-        <externalId>false</externalId>
         <label>Customer Priority</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -384,7 +382,6 @@
     </fields>
     <fields>
         <fullName>SLAExpirationDate__c</fullName>
-        <externalId>false</externalId>
         <label>SLA Expiration Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -402,7 +399,6 @@
     </fields>
     <fields>
         <fullName>SLA__c</fullName>
-        <externalId>false</externalId>
         <label>SLA</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -467,7 +463,6 @@
     </fields>
     <fields>
         <fullName>UpsellOpportunity__c</fullName>
-        <externalId>false</externalId>
         <label>Upsell Opportunity</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
@@ -509,7 +504,6 @@
     </fields>
     <fields>
         <fullName>testing_currency__c</fullName>
-        <externalId>false</externalId>
         <label>testing currency</label>
         <precision>18</precision>
         <required>false</required>
@@ -520,7 +514,6 @@
     <fields>
         <fullName>testing_org2orgfg__c</fullName>
         <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
         <label>testing org2orgfg</label>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Checkbox</type>
