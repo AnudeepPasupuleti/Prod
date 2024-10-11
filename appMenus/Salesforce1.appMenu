@@ -3,7 +3,7 @@
     <appMenuItems>
         <name>EinsteinInsights</name>
         <type>StandardAppMenuItem</type>
-    </appMenuItems>
+    </appMenuItems> 
     <appMenuItems>
         <name>Feed</name>
         <type>StandardAppMenuItem</type>
