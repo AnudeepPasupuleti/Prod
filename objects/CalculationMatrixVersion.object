@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
     <actionOverrides>
+        <actionName>ActivateDMVersion</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ActivateDMVersion</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ActivateDMVersion</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>CancelEdit</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -29,6 +43,20 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+        <actionName>CreateNewVersion</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CreateNewVersion</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CreateNewVersion</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
         <actionName>Delete</actionName>
         <type>Default</type>
     </actionOverrides>
@@ -53,6 +81,20 @@
     </actionOverrides>
     <actionOverrides>
         <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ExportAsDMNFile</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ExportAsDMNFile</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ExportAsDMNFile</actionName>
         <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
@@ -128,17 +170,34 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
-    <externalSharingModel>Private</externalSharingModel>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
-        <fullName>Address</fullName>
+        <fullName>ApiName</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>Description</fullName>
+        <fullName>CalculationMatrixId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>DscnModelNoteExportStatus</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>IsActive</fullName>
+        <fullName>EndDateTime</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>GroupKeyValue</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsEnabled</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>LoadProcessStatus</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -146,68 +205,24 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>OperatingHoursId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>OwnerId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>ParentTerritoryId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Hierarchy</type>
-    </fields>
-    <fields>
-        <fullName>SelfCheckInUrl</fullName>
+        <fullName>Namespace</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>ServiceAppointmentLimitType</fullName>
+        <fullName>Rank</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>TopLevelTerritoryId</fullName>
+        <fullName>StartDateTime</fullName>
         <trackHistory>false</trackHistory>
-        <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>TypicalInTerritoryTravelTime</fullName>
+        <fullName>SubGroupKeyValue</fullName>
         <trackHistory>false</trackHistory>
     </fields>
-    <listViews>
-        <fullName>All_ServiceTerritories</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All Service Territories</label>
-    </listViews>
-    <listViews>
-        <fullName>My_ServiceTerritories</fullName>
-        <filterScope>Mine</filterScope>
-        <label>My Service Territories</label>
-    </listViews>
-    <searchLayouts>
-        <customTabListAdditionalFields>IsActive</customTabListAdditionalFields>
-        <customTabListAdditionalFields>OperatingHours</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ParentTerritory</customTabListAdditionalFields>
-        <customTabListAdditionalFields>LAST_UPDATE</customTabListAdditionalFields>
-        <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>IsActive</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>OperatingHours</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>ParentTerritory</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LAST_UPDATE</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LastModifiedBy</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>IsActive</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>OperatingHours</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ParentTerritory</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LAST_UPDATE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LastModifiedBy</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>IsActive</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>OperatingHours</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ParentTerritory</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <fields>
+        <fullName>VersionNumber</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>

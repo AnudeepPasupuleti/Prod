@@ -128,17 +128,38 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
-    <externalSharingModel>Private</externalSharingModel>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
-        <fullName>Address</fullName>
+        <fullName>ApiName</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>Description</fullName>
+        <fullName>CalculationMatrixName</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>IsActive</fullName>
+        <fullName>CalculationProcedureVersionId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>DataType</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DefaultValue</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DisplayName</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsEditable</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsUserDefined</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -146,68 +167,16 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>OperatingHoursId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>OwnerId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>ParentTerritoryId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Hierarchy</type>
-    </fields>
-    <fields>
-        <fullName>SelfCheckInUrl</fullName>
+        <fullName>Namespace</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>ServiceAppointmentLimitType</fullName>
+        <fullName>Precision</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>TopLevelTerritoryId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>TypicalInTerritoryTravelTime</fullName>
+        <fullName>UiDisplayOrder</fullName>
         <trackHistory>false</trackHistory>
     </fields>
-    <listViews>
-        <fullName>All_ServiceTerritories</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All Service Territories</label>
-    </listViews>
-    <listViews>
-        <fullName>My_ServiceTerritories</fullName>
-        <filterScope>Mine</filterScope>
-        <label>My Service Territories</label>
-    </listViews>
-    <searchLayouts>
-        <customTabListAdditionalFields>IsActive</customTabListAdditionalFields>
-        <customTabListAdditionalFields>OperatingHours</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ParentTerritory</customTabListAdditionalFields>
-        <customTabListAdditionalFields>LAST_UPDATE</customTabListAdditionalFields>
-        <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>IsActive</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>OperatingHours</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>ParentTerritory</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LAST_UPDATE</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LastModifiedBy</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>IsActive</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>OperatingHours</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ParentTerritory</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LAST_UPDATE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LastModifiedBy</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>IsActive</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>OperatingHours</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ParentTerritory</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>

@@ -130,15 +130,15 @@
     <enableFeeds>false</enableFeeds>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>Address</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
         <fullName>Description</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>IsActive</fullName>
+        <fullName>InputVariablesMetadata</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>MigrationStatus</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -146,9 +146,12 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>OperatingHoursId</fullName>
+        <fullName>Namespace</fullName>
         <trackHistory>false</trackHistory>
-        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>OutputVariablesMetadata</fullName>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>OwnerId</fullName>
@@ -156,58 +159,14 @@
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>ParentTerritoryId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Hierarchy</type>
-    </fields>
-    <fields>
-        <fullName>SelfCheckInUrl</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>ServiceAppointmentLimitType</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>TopLevelTerritoryId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>TypicalInTerritoryTravelTime</fullName>
+        <fullName>UniqueName</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <listViews>
-        <fullName>All_ServiceTerritories</fullName>
+        <fullName>All_CalculationProcedures</fullName>
         <filterScope>Everything</filterScope>
-        <label>All Service Territories</label>
+        <label>All Calculation Procedures</label>
     </listViews>
-    <listViews>
-        <fullName>My_ServiceTerritories</fullName>
-        <filterScope>Mine</filterScope>
-        <label>My Service Territories</label>
-    </listViews>
-    <searchLayouts>
-        <customTabListAdditionalFields>IsActive</customTabListAdditionalFields>
-        <customTabListAdditionalFields>OperatingHours</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ParentTerritory</customTabListAdditionalFields>
-        <customTabListAdditionalFields>LAST_UPDATE</customTabListAdditionalFields>
-        <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>IsActive</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>OperatingHours</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>ParentTerritory</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LAST_UPDATE</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LastModifiedBy</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>IsActive</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>OperatingHours</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ParentTerritory</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LAST_UPDATE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LastModifiedBy</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>IsActive</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>OperatingHours</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ParentTerritory</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
 </CustomObject>

@@ -128,86 +128,70 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
-    <externalSharingModel>Private</externalSharingModel>
+    <externalSharingModel>Read</externalSharingModel>
     <fields>
-        <fullName>Address</fullName>
+        <fullName>ChannelId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DefaultBusinessHoursId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DefaultPickupTime</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>Description</fullName>
+        <fullName>DefaultProcessingTime</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>IsActive</fullName>
+        <fullName>DefaultProcessingTimeUnit</fullName>
         <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ExternalReference</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsDefault</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsEnabled</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>LastSyncedById</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LastSyncedDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>LastSyncedMessage</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>LocationGroupId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Name</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>OperatingHoursId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>OwnerId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>ParentTerritoryId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Hierarchy</type>
-    </fields>
-    <fields>
-        <fullName>SelfCheckInUrl</fullName>
+        <fullName>SyncStatus</fullName>
         <trackHistory>false</trackHistory>
     </fields>
-    <fields>
-        <fullName>ServiceAppointmentLimitType</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <fields>
-        <fullName>TopLevelTerritoryId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>TypicalInTerritoryTravelTime</fullName>
-        <trackHistory>false</trackHistory>
-    </fields>
-    <listViews>
-        <fullName>All_ServiceTerritories</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All Service Territories</label>
-    </listViews>
-    <listViews>
-        <fullName>My_ServiceTerritories</fullName>
-        <filterScope>Mine</filterScope>
-        <label>My Service Territories</label>
-    </listViews>
     <searchLayouts>
-        <customTabListAdditionalFields>IsActive</customTabListAdditionalFields>
-        <customTabListAdditionalFields>OperatingHours</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ParentTerritory</customTabListAdditionalFields>
-        <customTabListAdditionalFields>LAST_UPDATE</customTabListAdditionalFields>
-        <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>IsActive</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>OperatingHours</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>ParentTerritory</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LAST_UPDATE</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LastModifiedBy</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>IsActive</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>OperatingHours</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ParentTerritory</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LAST_UPDATE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LastModifiedBy</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>IsActive</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>OperatingHours</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ParentTerritory</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
+        <customTabListAdditionalFields>ExternalReference</customTabListAdditionalFields>
+        <searchResultsAdditionalFields>ExternalReference</searchResultsAdditionalFields>
     </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>Read</sharingModel>
 </CustomObject>

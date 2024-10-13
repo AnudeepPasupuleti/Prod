@@ -128,17 +128,60 @@
     </actionOverrides>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <enableFeeds>false</enableFeeds>
-    <externalSharingModel>Private</externalSharingModel>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
-        <fullName>Address</fullName>
+        <fullName>CalculationMatrixId</fullName>
         <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CalculationProcedureVersionId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>MasterDetail</type>
+    </fields>
+    <fields>
+        <fullName>ConditionsConvertedText</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ConditionsExpressionText</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ConditionsUiFormattedText</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DecisionTableId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Description</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>IsActive</fullName>
+        <fullName>FormulaConvertedText</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>FormulaExpressionText</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>FormulaUiFormattedText</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>InputVariablesFormatText</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsConditionalStep</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IsResultIncluded</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
@@ -146,68 +189,37 @@
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>OperatingHoursId</fullName>
+        <fullName>Namespace</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OutputVariablesFormatText</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OutputVariablesMappingText</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>ReferenceProcedureId</fullName>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>OwnerId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Lookup</type>
-    </fields>
-    <fields>
-        <fullName>ParentTerritoryId</fullName>
-        <trackHistory>false</trackHistory>
-        <type>Hierarchy</type>
-    </fields>
-    <fields>
-        <fullName>SelfCheckInUrl</fullName>
+        <fullName>ReturnMessageValueSet</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>ServiceAppointmentLimitType</fullName>
+        <fullName>Stage</fullName>
         <trackHistory>false</trackHistory>
     </fields>
     <fields>
-        <fullName>TopLevelTerritoryId</fullName>
+        <fullName>StageStepSequence</fullName>
         <trackHistory>false</trackHistory>
-        <type>Lookup</type>
     </fields>
     <fields>
-        <fullName>TypicalInTerritoryTravelTime</fullName>
+        <fullName>StepType</fullName>
         <trackHistory>false</trackHistory>
     </fields>
-    <listViews>
-        <fullName>All_ServiceTerritories</fullName>
-        <filterScope>Everything</filterScope>
-        <label>All Service Territories</label>
-    </listViews>
-    <listViews>
-        <fullName>My_ServiceTerritories</fullName>
-        <filterScope>Mine</filterScope>
-        <label>My Service Territories</label>
-    </listViews>
-    <searchLayouts>
-        <customTabListAdditionalFields>IsActive</customTabListAdditionalFields>
-        <customTabListAdditionalFields>OperatingHours</customTabListAdditionalFields>
-        <customTabListAdditionalFields>ParentTerritory</customTabListAdditionalFields>
-        <customTabListAdditionalFields>LAST_UPDATE</customTabListAdditionalFields>
-        <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
-        <lookupDialogsAdditionalFields>IsActive</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>OperatingHours</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>ParentTerritory</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LAST_UPDATE</lookupDialogsAdditionalFields>
-        <lookupDialogsAdditionalFields>LastModifiedBy</lookupDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>IsActive</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>OperatingHours</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>ParentTerritory</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LAST_UPDATE</lookupPhoneDialogsAdditionalFields>
-        <lookupPhoneDialogsAdditionalFields>LastModifiedBy</lookupPhoneDialogsAdditionalFields>
-        <searchResultsAdditionalFields>IsActive</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>OperatingHours</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>ParentTerritory</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
-        <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
-    </searchLayouts>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>
