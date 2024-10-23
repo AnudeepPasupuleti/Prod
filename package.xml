@@ -6,7 +6,6 @@
         <members>AccountRating</members>
         <members>AccountRating</members>
         <members>AccountType</members>
-        <members>AssetActionCategory</members>
         <members>AssetRelationshipType</members>
         <members>AssetStatus</members>
         <members>AssociatedLocationType</members>
@@ -116,5 +115,5 @@
         <members>WorkTypeGroupAddInfo</members>
         <name>StandardValueSet</name>
     </types>
-    <version>61.0</version>
+    <version>62.0</version>
 </Package>
