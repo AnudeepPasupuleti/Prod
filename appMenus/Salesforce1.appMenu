@@ -5,7 +5,7 @@
         <type>StandardAppMenuItem</type>
     </appMenuItems> 
     <appMenuItems>
-        <name>Feed</name>
+        <name>Feed name</name>
         <type>StandardAppMenuItem</type>
     </appMenuItems>
     <appMenuItems>
