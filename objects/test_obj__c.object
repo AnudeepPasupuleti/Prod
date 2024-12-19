@@ -27,7 +27,6 @@
     <fields>
         <fullName>testedith__c</fullName>
         <defaultValue>false</defaultValue>
-        <externalId>false</externalId>
         <label>testedith</label>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>

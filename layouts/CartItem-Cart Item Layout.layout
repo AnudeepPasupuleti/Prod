@@ -119,6 +119,10 @@
                 <field>UnitAdjustmentAmount</field>
             </layoutItems>
             <layoutItems>
+                <behavior>Edit</behavior>
+                <field>ParentCartItemId</field>
+            </layoutItems>
+            <layoutItems>
                 <behavior>Required</behavior>
                 <field>TotalLineNetAmount</field>
             </layoutItems>
@@ -146,6 +150,14 @@
                 <behavior>Required</behavior>
                 <field>GrossAdjustmentAmount</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>UnitItemAdjustmentAmount</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Required</behavior>
+                <field>UnitAdjustedPriceWithItemAdj</field>
+            </layoutItems>
         </layoutColumns>
         <style>OneColumn</style>
     </layoutSections>
@@ -157,6 +169,7 @@
         <style>CustomLinks</style>
     </layoutSections>
     <miniLayout>
+        <fields>ParentCartItemId</fields>
         <fields>TotalLineNetAmount</fields>
         <fields>TotalLineGrossAmount</fields>
         <fields>TotalPriceTaxAmount</fields>
@@ -164,6 +177,8 @@
         <fields>GrossUnitPrice</fields>
         <fields>NetAdjustmentAmount</fields>
         <fields>GrossAdjustmentAmount</fields>
+        <fields>UnitItemAdjustmentAmount</fields>
+        <fields>UnitAdjustedPriceWithItemAdj</fields>
     </miniLayout>
     <showEmailCheckbox>false</showEmailCheckbox>
     <showRunAssignmentRulesCheckbox>false</showRunAssignmentRulesCheckbox>

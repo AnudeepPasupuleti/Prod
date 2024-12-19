@@ -8,7 +8,6 @@ E.g.
 Case
 Lead
 Contact</description>
-        <externalId>false</externalId>
         <fieldManageability>SubscriberControlled</fieldManageability>
         <inlineHelpText>List of Object names (one per line) that are allowed to query, beside the Copado Objects.</inlineHelpText>
         <label>Allowed Objects</label>
@@ -21,7 +20,6 @@ Contact</description>
         <defaultValue>false</defaultValue>
         <deprecated>false</deprecated>
         <description>Set to true if the OpenAI Model allows Function calls</description>
-        <externalId>false</externalId>
         <fieldManageability>SubscriberControlled</fieldManageability>
         <inlineHelpText>Set to true if the OpenAI Model allows Function calls</inlineHelpText>
         <label>Allows Functions</label>
